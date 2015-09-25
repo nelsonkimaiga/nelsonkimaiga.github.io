@@ -1,288 +1,164 @@
-<!DOCTYPE html>
+<!--By Kimaiga-->
+<DOCTYPE html>
 <html>
 <head>
-	<title>Kimaiga Web | Home </title>
-	<!--fonts-->
-		<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<!--//fonts-->
-			<link href="css/bootstrap.css" rel="stylesheet">
-			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- for-mobile-apps -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Peak Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //for-mobile-apps -->	
-	<!-- js -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script src="js/modernizr.custom.97074.js"></script>
-	<!-- js -->
-	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-	<!-- start-smoth-scrolling -->
+
+	<title>Nelson Kimaiga | Cross-platform Developer</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Nelson Kimaiga is a cross-plaftform developer based in Nairobi, Kenya." />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/formValidator.js"></script>
 </head>
 <body>
-<!-- banner -->
-<div id="home" class="banner">
-	<div class="container">
-		<div class="banner-grids">
-			<div class="col-md-4 navigation">
-				<div class="nav-left">
-					<div class="grid__item color-4">
-						<a class="link link--kumya" href="#home"><span data-letters="Kimaiga">KIMAIGA</span></a>
-					</div>
-				</div>
-				<div class="nav-right">
-						<span class="menu"><img src="images/menu.png" alt="" /></span>
-							<nav class="cl-effect-1">
-								<ul class="nav1">
-									<li><a class="scroll" href="#home">Home</a></li>
-									<li><a class="scroll" href="#about">About Me</a></li>
-									<li><a class="scroll" href="#portfolio">Activities</a></li>
-								<!--	<li><a class="scroll" href="#services">Miscellaneous</a></li>-->
-									<li><a class="scroll" href="#contact">Contact Me</a></li>
-								</ul>
-							</nav>
-							<!-- script for menu -->
-							<script> 
-								$( "span.menu" ).click(function() {
-								$( "ul.nav1" ).slideToggle( 300, function() {
-								 // Animation complete.
-								});
-								});
-							</script>
-							<!-- //script for menu -->
+  <header id="top">
+	<div class="kimaiga">
+			
+			<!--adding my avatar-->
+				<img class="avatar" src="images/Kimaiga.jpg" alt="kimaiga" />
 
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="col-md-8 banner-image text-center">
-				<img src="images/IMAG0231-1-1.jpg" alt=""/>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!-- //banner -->
-<!-- about -->
-<div id="about" class="about">
-	<div class="container">
-		<div class="about-info">
-				<h3>ABOUT ME</h3>
-				<h4>Who I am and what I do</h4>
-				<p>Simply put, I am just human. I have just realized how much potential is in the field of developement, 
-                    and I have therefore decided to pursue it at Moringa.</p>
-		</div>
-		<div class="about-grids">
-		   	<div class="col-md-6 about-grid">
-		   		<h4>What I do and my hobbies</h4>
-		   		<p>I like watching football as well do social media escpecially Twitter during my free time. I'm also a great enthusiast of the fiction in comics such MARVELS as well as Existential Comics. I also enjoy practising on coding using various programming languages; notably Java.</p>
-                
-		   	</div>
-		   	<div class="col-md-6 about-grid">
-		   		<h4>My goals</h4>
-		   		<p>Life is an open road, and therefore are my goals. It is never too late to achieve anything. That said,
-                my ultimate goal is to be be a self-sufficient person in the future.</p>
-		   	</div>
-		   	<div class="clearfix"> </div>
-		</div>   
-	</div>
-</div>
-<!-- //about -->
-<!-- my skills -->
-	<div class="our-skills">
-		<div class="container">
-			<div class="skill-info">
-				<h2>MY SKILLS</h2>
-			</div>
-			<div class="skill-grids">
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-1"></div>
-						<p>Web Design</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-2"></div>
-						<p>HTML/CSS</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-3"></div>
-						<p>Graphic Design</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-4"></div>
-						<p>UI/UX</p>
-					</div>
-					<div class="clearfix"> </div>
-				 <script type="text/javascript" src="js/circles.js"></script>
-					         <script>
-								var colors = [
-										['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852']
-									];
-								for (var i = 1; i <= 5; i++) {
-									var child = document.getElementById('circles-' + i),
-										percentage = 40 + (i * 10);
-										
-									Circles.create({
-										id:         child.id,
-										percentage: percentage,
-										radius:     80,
-										width:      10,
-										number:   	percentage / 10,
-										text:       '%',
-										colors:     colors[i - 1]
-									});
-								}
-						
-				</script>
-			</div>
-		</div>	
-	</div>
-<!-- //my skills -->
-<div id="portfolio" class="gallery">
-		<div class="container">
-				<script src="js/jquery.chocolat.js"></script>
-			<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-			<!--light-box-files -->
-			<script type="text/javascript" charset="utf-8">
-			$(function() {
-				$('.gallery a').Chocolat();
-			});
-			</script>
-			<h3>My Activities</h3>
-            <p>I enjoy my programming; Like this: 
-            	<li>
-						<a href="images/Mac%20Book%20dream.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/Mac%20Book%20dream.jpg" alt="" />
-							<div>
-								<h5>VIEW</h5>
-							</div>
-						</a>
-					</li></p>
-			<section>
-				<ul id="da-thumbs" class="da-thumbs">
+				<h2>NELSON KIMAIGA<span> Cross-Platform Developer</span>
 
-					<div class="clearfix"> </div>
-				</ul>
+				
+	<a href="documents/Curriculum Vitae.docx" download="filename">Download a copy of my Resume</a>
+	</h2>
+	
+	<div class="social">
+					<a class="twitter" href="http://twitter.com/Nelsonguto" data-username="Nelsonguto">Twitter</a>
+					<a class="dribbble" href="http://dribbble.com/">Dribbble</a>
+					<a class="linkedin" href="http://linkedin.com/in/" data-username="">LinkedIn</a>
+					<a class="github" href="http://github.com/nelsonkimaiga">Github</a>
+					<a class="email" href="mailto:nelsonkimaiga@aol.com">Email me</a>
+					<a class="medium" href="http://medium.com/">Medium</a>
+				</div>
+
+			</div>
+
+		</header>
+
+<!--container for div-->
+<div id="container">
+<h2><span><em class="lefty">SHORT BIO</em><em class="righty"> My Principles</em></span></h2>
+
+		<section class="portfolio">
+
+			<section class="column">
+				<p>
+					I'm a developer using the most sought after <a href="http://paidhq.com">technologies</a> and <a href="http://paidhq.com/payment">platforms</a> to come up with solutions in web design.
+					
+					Embracing version control through using <a href="http://github.com/nelsonkimaiga">Github</a> as well as partcipating in open sources activities such as Pro bono work.
+				
+					<br/><br/>
+
+					Most importantly, I'm a young man who wakes up to new challenges
+					each day. 
+				</p>
 			</section>
-				<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
-				<script type="text/javascript">
-					$(function() {
-						$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-					});
-				</script>
-        </div>	
-</div>
-<!--//gallery-->
-<!--services-->
-<div id="services" class="services">
-<!--	<div class="container">
-		<div class="ser-head">
-			<h3>MISCELANEOUS INFORMATION</h3>
-		</div>
+			<section class="column principles">
+				<p>
+					Measuring programming progress by lines of code is like measuring aircraft building progress by weight.
+				</p>
+				<p>
+					Design can never be <em>too</em> simple.
+				</p>
+				<p>
+					Good code has its own written documentation.
+				</p>
+				<p>
+					Prototypes provide a path.
+				</p>
+				<p>
+					Persistence trumps talent.
+				</p>
+<!--My skills-->
+				<ul class="skills">
+					<li class="html">HTML</li>
+					<li class="css">CSS</li>
+					<li class="js">JavaScript</li>
+					<li class="java">Java</li>
+					<li class="Android">Android</li>
+				</ul>
 
-			<div class="clearfix"></div>
-		</div> -->
-	</div>
-</div>
-<!--//services-->
-<!--news-->
-<div class="news">
-	<div class="container">
-		<h3>Hear from me via Email</h3>
-		<p> Get an email from me informing you of my whereabouts. </p>
-		<div class="na-m">
-			<div class="name">
-				<form>
-					<input type="text" placeholder="Enter email id" required="">
-				</form>
-			</div>
-			<div class="button">
-				<form>
-					<input type="submit" value="Subscribe">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--//news-->
-<!-- get-in -->
-<div id="contact" class="get-in-touch">
-	<div class="container">
-		<div class="get-info text-center">
-			<h3>GET IN TOUCH</h3>
-			<h4><i>Feel Free To Contact Me</i></h4>
-			<p>Contact me</p>
-		</div>
-	</div>
-	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819" frameborder="0" style="border:0"></iframe>
-	</div>
-</div>
-<!-- //get-in -->
-<!-- contact-us -->
-<div class="contact-us">
-	<div class="container">
-		<div class="contact-grids">
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></div>
-				<p>Donholm Estate, Nairobi Kenya</p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
-				<p><a href="mailto:info@example.com">nelsonkimaiga@aol.com</a></p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></div>
-				<p>0721496346</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="contact-info">
-			<form>
-				<input type="text" placeholder="Your Name" required>
-				<input type="text" placeholder="Your E-Mail" required>
-				<input type="text" placeholder="Subject" required>
-				<textarea placeholder="Your Message" required></textarea>
-				<input type="submit" value="SEND MESSAGE">
+			</section>
+
+		</section>
+
+<h2><span><em>My Current WEB PROJECTS</em></span></h2>
+<center><p>Coming soon!</p></center>
+
+
+
+
+		<section class="portfolio">
+
+			<section class="column">
+				<!--coming soon!-->
+			</section>
+			
+			<section class="column">
+<!--coming soon!-->
+			</section>
+			
+		</section>		
+
+<h2><span><em>Conatact Me</em></span></h2>
+		
+		<section id="contact">
+			<h2>Looking forward to working with you.</h2>
+			<h3>Know my portfolio better. Talk to me.</h3>
+			<form action="scripts/email.php" method="POST">
+				<p>
+
+					<label for="name">Name:</label>
+					<input type="text" id="name" class="field" placeholder="Name" />
+				</p>
+				<p>
+					<label for="email">Email Address:</label>
+					<input type="text" id="email" class="field" placeholder="Email" />
+				</p>
+				<p>
+					<label for="subject">Your Subject</label>
+					<input type="text" id="subject" class="field" placeholder="Subject" />
+				</p>
+				<p>
+					<label for="message">Your Message:</label>
+					<textarea id="message" rows="5" cols="100" class="field" placeholder="Message"></textarea>
+				</p>
+				<div id="status">
+					<div class="button">
+						<button id="submit">Submit</button>
+						
+						<div id="success" class="message" style="display:none">Message sent.</div>
+						<div id="error" class="message" style="display:none;">Something went wrong.</div>
+					</div>
+				</div>
+
 			</form>
-		</div>
+
+		</section>
+
+		<!--footer-->
+<footer>
+		
+		<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nelsonkimaiga.github.io" data-text="Check me out @Nelsonguto" data-count="horizontal">Tweet</a>
+
+		<!--date an year-->
+	&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+		</footer>
+		
 	</div>
-</div>
-<!-- //contact-us -->
-<!-- footer -->
-<div class="copy-right">
-	<div class="container">
-		<p> &copy; 2015. All Rights Reserved. </a></p>
-	</div>
-</div>
-<!-- footer -->
-<!-- smooth scrolling -->
+<!--gooogle analytics-->	
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
+		_uacct = "UA-1811790-1";
+		urchinTracker();
 	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
+	
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	
 </body>
 </html>
