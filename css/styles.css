@@ -152,13 +152,13 @@ header .kimaiga {
 		letter-spacing: 0.2em;
 	}
 
-	header .social {
+	/*header .social {
 		text-align: center;
 		padding-top: 0;
 	}
-
-		header .social a {
-			width: 50px;
+*/
+footer .social a {
+		/*	width: 50px;
 			height: 50px;
 			display: inline-block;
 			text-indent: -999em;
@@ -170,16 +170,39 @@ header .kimaiga {
 			border: 0;
 
 			-webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
-    	transition: all .2s ease-in-out;
+    	/*transition: all .2s ease-in-out;*/
+
+}
+    	ul {
+ overflow: auto;
+}
+ 
+ul li {
+ list-style-type: none;
+ float: left;
+}
+ 
+ul li a i {
+ background: #205D7A;
+ color: #fff;
+ width: 40px;
+ height: 40px;
+ border-radius: 20px;
+ font-size: 25px;
+ text-align: center;
+ margin-right: 10px;
+ padding-top: 15%;
+}
+ 
     }
 
 /*social media icons*/
-			header .social a.twitter  { background-image: url(social/twitter.png); }
+		/*	header .social a.twitter  { background-image: url(social/twitter.png); }
 			header .social a.dribbble { background-image: url(social/dribbble.png); }
 			header .social a.linkedin { background-image: url(social/linkedin.png); }
 			header .social a.medium   { background-image: url(social/medium.png); display:none; }
 			header .social a.email    { background-image: url(social/email.png); }
-			header .social a.github   { background-image: url(social/github.png); }
+			header .social a.github   { background-image: url(social/github.png); }*/
 
 .skills {
 	list-style: none;
