@@ -15,6 +15,7 @@
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/formValidator.js"></script>
+	<script type="text/javascript" src="js/ContactFormValidator.js"></script>
 </head>
 <body>
   <header id="top">
@@ -79,6 +80,7 @@
 					Persistence trumps talent.
 				</p>
 <!--My skills-->
+<div>
 				<ul class="skills">
 					<li class="html">HTML</li>
 					<li class="css">CSS</li>
@@ -86,7 +88,7 @@
 					<li class="java">Java</li>
 					<li class="Android">Android</li>
 				</ul>
-
+</div>
 			</section>
 
 		</section>
@@ -114,7 +116,7 @@
 		<section id="contact">
 			<h2>Looking forward to working with you.</h2>
 			<h3>Know my portfolio better. Talk to me.</h3>
-			<form action="scripts/email.php" method="POST">
+			<form action="" method="POST">
 				<p>
 
 					<label for="name">Name:</label>
@@ -134,7 +136,7 @@
 				</p>
 				<div id="status">
 					<div class="button">
-						<button id="submit">Submit</button>
+						<button id="submit"  value="Send email">Submit</button>
 						
 						<div id="success" class="message" style="display:none">Message sent.</div>
 						<div id="error" class="message" style="display:none;">Something went wrong.</div>
@@ -184,7 +186,7 @@ ul li a i {
     padding-top: 15%;
     transition: all 0.2s ease-in-out;
 }
-.fa-facebook {
+.fa-github {
     background:#3b5998
 } 
 .fa-linkedin {
@@ -193,7 +195,7 @@ ul li a i {
 .fa-twitter {
     background:#00aced
 }
-.google-plus {
+.enevlope {
     background:#dd4b39
 }
 ul li a i:hover {
