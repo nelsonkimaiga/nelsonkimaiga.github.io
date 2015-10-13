@@ -94,13 +94,6 @@ h1 a {
 		background: url(images/logo.png) no-repeat 0 0;
 		border: 0;
 		}
-
-header {
-		height: 526px;
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
 /*bounce effect for my header*/	
 .kimaiga {
 		padding-top: 150px;
@@ -197,12 +190,21 @@ ul li a i {
     }
 
 /*social media icons*/
-		/*	header .social a.twitter  { background-image: url(social/twitter.png); }
-			header .social a.dribbble { background-image: url(social/dribbble.png); }
-			header .social a.linkedin { background-image: url(social/linkedin.png); }
-			header .social a.medium   { background-image: url(social/medium.png); display:none; }
-			header .social a.email    { background-image: url(social/email.png); }
-			header .social a.github   { background-image: url(social/github.png); }*/
+.kimaiga .social a.twitter {background-image: url(../social/twitter.png);}
+.kimaiga .social a.dribbble { background-image: url(../social/dribbble.png); }
+.kimaiga .social a.linkedin { background-image: url(../social/linkedin.png); }
+.kimaiga .social a.github   { background-image: url(../social/github.png); }
+.kimaiga .social a.email    { background-image: url(../social/mail.png); }
+
+.kimaiga .social {
+		text-align: center;
+		padding-top: 0;
+		height: 80px;
+	}
+
+div.social{
+	height: 60px;
+}
 
 .skills {
 	list-style: none;
