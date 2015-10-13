@@ -102,7 +102,7 @@ header {
 		width: 100%;
 	}
 /*bounce effect for my header*/	
-header .kimaiga {
+.kimaiga {
 		padding-top: 150px;
 		-webkit-animation-name: bounceInDown;
 		-moz-animation-name: bounceInDown;
@@ -124,7 +124,7 @@ header .kimaiga {
 	        animation-fill-mode: both;
 	}
 
-	header .avatar {
+	.kimaiga.avatar {
 		display: block;
 		border-radius: 50%;
 		width: 100px;
@@ -667,4 +667,13 @@ footer {
 		line-height: 1em;
 		padding-top: 20px;
 	}
+	?/*text within the span tags in kimaiga class*/
+.kimaiga span {
+	display: block;
+		font-size: 30px;
+		padding-top: 20px;
+		font-weight: normal;
+		color: rgba(255,255,255,0.6);
+		font-family: ProximaNovaLight;
+		letter-spacing: 0.2em;
 }
