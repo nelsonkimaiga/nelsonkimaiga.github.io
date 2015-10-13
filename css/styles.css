@@ -649,4 +649,22 @@ footer {
 	top: 0px;
 	width: 100%;
 	height: 526px;
+	background-size: relative;
+	display: block;
+	font-size: 14px;
+    padding-top: 20px;
+	font-weight: normal;
+	color: rgba(255,255,255,0.6);
+	font-family: ProximaNovaLight;
+	letter-spacing: 0.2em;
+	}
+.kimaiga h2{
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		display: block;
+		font-size: 3em;
+		line-height: 1em;
+		padding-top: 20px;
+	}
 }
