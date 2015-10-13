@@ -661,6 +661,7 @@ footer {
 	color: rgba(255,255,255,0.6);
 	font-family: ProximaNovaLight;
 	letter-spacing: 0.2em;
+	animation: animatedBackground 40s linear infinite;
 	}
 .kimaiga h2{
 		text-transform: uppercase;
@@ -681,3 +682,10 @@ footer {
 		font-family: ProximaNovaLight;
 		letter-spacing: 0.2em;
 }
+
+/*animated background*/
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
