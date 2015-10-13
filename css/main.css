@@ -166,6 +166,8 @@ main {
 	position: absolute;
 	left: 50%;
 	top: 50%;
+	padding-top: 120px; 
+}
 }
 	.hsContent h2  {
 		color: #fff8de;
@@ -414,3 +416,75 @@ main {
         page-break-after: avoid;
     }
 }
+
+
+footer {
+	width: 780px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 11px;
+	color: #3F372F;
+	padding-bottom: 60px;
+	position: relative;
+	font-family: ProximaNovaSemibold;
+	text-align: right;
+}
+
+/*contact form*/
+#contact {
+	clear: both;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 60px 0;
+}
+
+#contact form {
+	display: block;
+	overflow:hidden;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#contact h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding-bottom: 5px;
+	color: #130E08;
+	border-bottom: 0;
+	height: auto;
+}
+
+#contact h3 {
+	text-align: center;
+	opacity: 0.7;
+	display: block;
+	padding-bottom: 20px;
+}
+
+form p {
+	padding-top: 20px;
+	margin-bottom: 40px;
+	display: block;
+	margin: 0 auto;
+	border-bottom: 1px solid #444948;
+}
+
+body,html { 
+margin:0; 
+padding: 0; 
+width: 100%;
+}
+
+
+/*social media icons*/
+.social a.twitter  { background-image: url(social/twitter.png); }
+.social a.dribbble { background-image: url(social/dribbble.png); }
+.social a.linkedin { background-image: url(social/linkedin.png); }
+.social a.medium   { background-image: url(social/medium.png); display:none; }
+.social a.email    { background-image: url(social/email.png); }
+.social a.github   { background-image: url(social/github.png); }
