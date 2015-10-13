@@ -64,7 +64,7 @@ ol,ul {
 
 /*body styling*/
 body {
-	background: black url("") repeat-x center top fixed;
+	background:  url("") repeat-x center top fixed;
 	color: #444948;
 	font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif;
 
