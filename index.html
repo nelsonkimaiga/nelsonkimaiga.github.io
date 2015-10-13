@@ -9,8 +9,8 @@
   <title>Nelson Kimaiga</title>
 
   <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/foundation.css">
+  <!--link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css"-->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -20,6 +20,7 @@
 <body>
 
   <!-- body content here -->
+  <header>
 <div class="kimaiga">
       
       <!--adding my avatar-->
@@ -37,20 +38,134 @@
           <a class="linkedin" href="http://linkedin.com/in/" data-username="">LinkedIn</a>
           <a class="github" href="http://github.com/nelsonkimaiga">Github</a>
           <a class="email" href="mailto:nelsonkimaiga@aol.com">Email me</a>
-          <a class="medium" href="http://medium.com/">Medium</a>
          </div>
 </div>
+</header>
+<!--short bio-->
+<!--container for div-->
+<div id="container">
+<h2><span><em class="lefty">SHORT BIO</em><em class="righty"> My Principles</em></span></h2>
 
+    <section class="portfolio">
 
+      <section class="column">
+        <p>
+          I'm a developer using the most sought after <a href="http://modernizr.com">technologies</a> and <a href="http://paidhq.com/payment">platforms</a> to come up with solutions in web design.
+          
+          Embracing version control through using <a href="http://github.com/nelsonkimaiga">Github</a> as well as partcipating in open sources activities such as Pro bono work.
+        
+          <br/><br/>
 
+          Most importantly, I'm a young man who wakes up to new challenges
+          each day. 
+        </p>
+      </section>
+      <section class="column principles">
+        <p>
+          Measuring programming progress by lines of code is like measuring aircraft building progress by weight.
+        </p>
+        <p>
+          Design can never be <em>too</em> simple.
+        </p>
+        <p>
+          Good code has its own written documentation.
+        </p>
+        <p>
+          Prototypes provide a path.
+        </p>
+        <p>
+          Persistence trumps talent.
+        </p>
+<!--My skills-->
+<div>
+        <ul class="skills">
+          <li class="html">HTML</li>
+          <li class="css">CSS</li>
+          <li class="js">JavaScript</li>
+          <li class="java">Java</li>
+          <li class="Android">Android</li>
+        </ul>
+</div>
+      </section>
 
+    </section>
+<h2><span><em>My Current WEB PROJECTS</em></span></h2>
 
+    <section class="portfolio">
 
+      <section class="column">
+        <a class="item" href="https://nelsonkimaiga.bitballoon.com/"><img src="images/nelsonkimaiga.png" alt="personal github page" /></a>
+        <a class="item" href="https://kimaigafrontend.bitballoon.com"><img src="images/FrontEnd.png" alt="Gnome PSD site" /></a>
+        
+      </section>
+      <section class="column">
+           <a class="item" href="https://delanipsd.bitballoon.com/"><img src="images/delani.png" alt="Delani Studios" /></a>
+        </section>
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
+</section>    
+
+<h2><span><em>Contact Me</em></span></h2>
+    
+    <section id="contact">
+      <h2>Looking forward to working with you.</h2>
+      <h3>Know my portfolio better. Talk to me.</h3>
+      <form action="js/ContactFormValidator.js" method="POST">
+        <p>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" class="field" placeholder="Name" />
+        </p>
+        <p>
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" class="field" placeholder="Email" />
+        </p>
+        <p>
+          <label for="subject">Your Subject</label>
+          <input type="text" id="subject" class="field" placeholder="Subject" />
+        </p>
+        <p>
+          <label for="message">Your Message:</label>
+          <textarea id="message" rows="5" cols="100" class="field" placeholder="Message"></textarea>
+        </p>
+        <div id="status">
+          <div class="button">
+            <button id="submit"  value="Send email">Submit</button>
+            
+            <div id="success" class="message" style="display:none">Message sent.</div>
+            <div id="error" class="message" style="display:none;">Something went wrong.</div>
+          </div>
+        </div>
+
+      </form>
+
+    </section>
+
+    <!--footer-->
+<footer>
+    
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nelsonkimaiga.github.io" data-text="Check me out @Nelsonguto" data-count="horizontal">Tweet</a>
+
+    <!--date and year-->
+  &copy; <script type="text/javascript">
+  document.write(new Date().getFullYear());
+  document.write(new day().getFullDay());
   </script>
+</footer>
+    
+  </div>
+<!--gooogle analytics-->  
+<script>
+    (function(i,s,o,g,r,a,m){i[‘GoogleAnalyticsObject’]=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,’script’,’//www.google-analytics.com/analytics.js’,’ga’);
+
+    ga(‘create’, ‘UA-XXXX-Y’, ‘auto’);
+    ga(‘send’, ‘pageview’);
+    </script>
+
+  
+  <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+  
 </body>
 </html>

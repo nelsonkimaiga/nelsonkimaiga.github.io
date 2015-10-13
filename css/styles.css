@@ -125,7 +125,7 @@ h1 a {
 		margin: 0 auto;
 	}
 
-	header h2 {
+/*	header h2 {
 		text-transform: uppercase;
 		color: #fff;
 		text-align: center;
@@ -143,7 +143,7 @@ h1 a {
 		color: rgba(255,255,255,0.6);
 		font-family: ProximaNovaLight;
 		letter-spacing: 0.2em;
-	}
+	}*/
 
 	/*header .social {
 		text-align: center;
@@ -236,6 +236,7 @@ div.social{
 	box-shadow: 0 0 5px rgba(0,0,0,.2);
 	z-index: 3;
 	padding-top: 20px;
+	vertical-align: top;
 }
 
 #container h2 {
@@ -634,10 +635,11 @@ footer {
 
 	div.button { padding-top: 10px; }
 
-	header .kimaiga { padding-top: 120px; }
+	.kimaiga { padding-top: 120px; }
 
-	header h2 span { padding-top: 0; padding-bottom: 20px; }
+	.kimaiga h2 span { padding-top: 0; padding-bottom: 20px; }
 }	
+
 .avatar {
 		display: block;
 		border-radius: 50%;
@@ -647,11 +649,11 @@ footer {
 	}
 .kimaiga{
 	background-image: url(../images/abstract1.jpg);
-	background-position: fixed;
+	position: fixed;
 	top: 0px;
 	width: 100%;
 	height: 526px;
-	background-size: relative;
+	background-size: ;
 	display: block;
 	font-size: 14px;
     padding-top: 20px;
@@ -669,7 +671,7 @@ footer {
 		line-height: 1em;
 		padding-top: 20px;
 	}
-	?/*text within the span tags in kimaiga class*/
+/*text within the span tags in kimaiga class*/
 .kimaiga span {
 	display: block;
 		font-size: 30px;
