@@ -190,7 +190,7 @@ ul li a i {
     }
 
 /*social media icons*/
-.kimaiga .social a.twitter {background-image: url(../social/twitter.png);}
+.kimaiga .social a.twitter  {background-image: url(../social/twitter.png);}
 .kimaiga .social a.dribbble { background-image: url(../social/dribbble.png); }
 .kimaiga .social a.linkedin { background-image: url(../social/linkedin.png); }
 .kimaiga .social a.github   { background-image: url(../social/github.png); }
@@ -661,7 +661,7 @@ footer {
 	color: rgba(255,255,255,0.6);
 	font-family: ProximaNovaLight;
 	letter-spacing: 0.2em;
-	animation: animatedBackground 40s linear infinite;
+	animation: animatedBackground 20s linear infinite;
 	}
 .kimaiga h2{
 		text-transform: uppercase;
