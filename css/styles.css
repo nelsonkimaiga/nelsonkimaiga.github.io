@@ -422,6 +422,20 @@ font-size: 2.6em;
 	margin-top:4em;
 }
 
+.skills {
+     margin: 6em 0 5em;
+}
+
+/*--portfolio--*/
+
+.galry-grids {
+  padding: 2px;
+}
+.galry-grids img {
+  width: 100%;
+}
+
+
 /*avatar*/
 .kimaiga.avatar {
 		display: block;
