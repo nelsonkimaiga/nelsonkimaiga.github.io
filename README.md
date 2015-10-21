@@ -1,2 +1,3 @@
 # nelsonkimaiga.github.io
-Personal website and portolio
+This is where I have developed and hosted my Personal website and portfolio. 
+My website's url: http://nelsonkimaiga.githiub.io
