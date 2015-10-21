@@ -50,6 +50,15 @@ padding: 0;
 width: 100%;
 }
 
+body a{
+		transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+
 body,h1,h2,h3,h4,h5,h6,pre,code { 
 	font-size: 1em; 
 
@@ -114,7 +123,7 @@ h1 a {
 	-webkit-animation-fill-mode: both;
 	   -moz-animation-fill-mode: both;
 	     -o-animation-fill-mode: both;
-	        animation-fill-mode: both;
+	        animation-fill-mode: both;	        
 	}
 
 	.kimaiga.avatar {
@@ -124,110 +133,6 @@ h1 a {
 		height: 101px;
 		margin: 0 auto;
 	}
-
-/*	header h2 {
-		text-transform: uppercase;
-		color: #fff;
-		text-align: center;
-		display: block;
-		font-size: 3em;
-		line-height: 1em;
-		padding-top: 20px;
-	}
-
-	header h2 span {
-		display: block;
-		font-size: 14px;
-		padding-top: 20px;
-		font-weight: normal;
-		color: rgba(255,255,255,0.6);
-		font-family: ProximaNovaLight;
-		letter-spacing: 0.2em;
-	}*/
-
-	/*header .social {
-		text-align: center;
-		padding-top: 0;
-	}
-*/
-footer .social a {
-		/*	width: 50px;
-			height: 50px;
-			display: inline-block;
-			text-indent: -999em;
-			-webkit-transform: scale(0.5, 0.5);
-			transform: scale(0.5, 0.5);
-			background-position: center center;
-			background-repeat: no-repeat;
-			text-align: center;
-			border: 0;
-
-			-webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
-    	/*transition: all .2s ease-in-out;*/
-
-}
-    	ul {
- overflow: auto;
-}
- 
-ul li {
- list-style-type: none;
- float: left;
-}
- 
-ul li a i {
- background: #205D7A;
- color: #fff;
- width: 40px;
- height: 40px;
- border-radius: 20px;
- font-size: 25px;
- text-align: center;
- margin-right: 10px;
- padding-top: 15%;
-
-}
- 
-    }
-
-/*social media icons 
-.kimaiga .social a.twitter  { background-image: url(../social/twitter.png);}
-.kimaiga .social a.dribbble { background-image: url(../social/dribbble.png); }
-.kimaiga .social a.linkedin { background-image: url(../social/linkedin.png); }
-.kimaiga .social a.github   { background-image: url(../social/github.png); }
-.kimaiga .social a.email    { background-image: url(../social/mail.png); } */
-
-.kimaiga .social {
-		text-align: center;
-		padding-top: 0;
-		height: 80px;
-	}
-
-div.social{
-	height: 60px;
-}
-
-.skills {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	height: 70px;
-	display: none;
-}
-	.skills li {  
-		border-top-style: solid;
-		display:inline-block;
-		width: 20%; 
-		position: absolute;
-		bottom: 0;
-		text-align: center;
-	}
-	.skills li.html  { border-top-color: rgba(33,74,100, 1.0); border-top-width: 10px; }
-	.skills li.css  { border-top-color: rgba(33,74,100, 0.8); border-top-width: 10px; left: 20%; }
-	.skills li.js 	 { border-top-color: rgba(33,74,100, 0.6); border-top-width: 7px;  left: 40%; }
-	.skills li.java { border-top-color: rgba(33,74,100, 0.4); border-top-width: 4px;  left: 60%; }
-	.skills li.Android   { border-top-color: rgba(33,74,100, 0.2); border-top-width: 4px;  left: 80%; }
 
 #container {
 	margin: 526px auto 0 auto;
