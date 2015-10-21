@@ -337,6 +337,42 @@ display: inline-block;
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
+.banner {
+    /*background-color:;*/
+    background-size: cover;
+    min-height: 600px;
+        position: relative;
+        background-image: url(../images/abstract1.jpg);
+}
+.banner-info{
+    background: url(../images/banner-in.jpg)no-repeat 0px 0px;
+    width: 500px;
+    height: 400px;
+    margin: 17.5% auto 0;
+}
+.banner-text{
+position: absolute;
+    top: 18em;
+    left: 18em;
+}
+.banner-text h1 {
+font-size: 2.6em;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+.banner-text h2 {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 13px 0 23px;
+    font-style: italic;
+    border-top: 3px solid#fff;
+    width: 73%;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+
 /*avatar*/
 .kimaiga.avatar {
 		display: block;
