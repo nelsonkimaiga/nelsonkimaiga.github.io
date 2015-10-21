@@ -69,6 +69,37 @@ ol,ul {
 	margin-left: 25px; 
 }
 
+/*nav*/
+body a:hover{
+	text-decoration:none;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+        margin-bottom: 0;
+}
+.navbar {
+    padding-top: 10px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #FFFFFF;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+.navbar-nav {
+    margin-left: 47px;
+}
+.navbar-nav > li {
+    float: left;
+    margin: 0 12px;
+}
+.navbar-nav > li > a {
+    padding: 9px 16px;
+}
 
 
 
@@ -103,27 +134,26 @@ h1 a {
 		border: 0;
 		}
 /*bounce effect for my header*/	
-.kimaiga {
-		padding-top: 150px;
-		-webkit-animation-name: bounceInDown;
-		-moz-animation-name: bounceInDown;
-		-o-animation-name: bounceInDown;
-		animation-name: bounceInDown;
+.header{
+	padding: .6em 0;
+}
 
-	-webkit-animation-delay: 1s;
-		 -moz-animation-delay: 1s;
-		   -o-animation-delay: 1s;
-		      animation-delay: 1s;
+.logo{
+	width: 23%;
+	float: left;
+	text-align: center;
+}
 
-	-webkit-animation-duration: 1s;
-	   -moz-animation-duration: 1s;
-	     -o-animation-duration: 1s;
-	        animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	   -moz-animation-fill-mode: both;
-	     -o-animation-fill-mode: both;
-	        animation-fill-mode: both;	        
-	}
+.logo a h1{
+	font-family: 'Berkshire Swash', cursive;
+    margin-top: 0px;
+    width: 56%;
+    font-size: 3.1em;
+    margin-bottom: 0;
+    color: #000;
+    font-weight: 100;
+
+}
 
 	.kimaiga.avatar {
 		display: block;
@@ -352,6 +382,12 @@ input:focus, textarea:focus, select:focus {
 	label {
 		display: none;
 	}
+
+ul,label{
+	margin:0;
+	padding:0;
+}
+
 	
 	.message {
 		height: 29px; 
