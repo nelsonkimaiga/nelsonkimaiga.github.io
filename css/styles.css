@@ -190,12 +190,12 @@ ul li a i {
  
     }
 
-/*social media icons */
+/*social media icons 
 .kimaiga .social a.twitter  { background-image: url(../social/twitter.png);}
 .kimaiga .social a.dribbble { background-image: url(../social/dribbble.png); }
 .kimaiga .social a.linkedin { background-image: url(../social/linkedin.png); }
 .kimaiga .social a.github   { background-image: url(../social/github.png); }
-.kimaiga .social a.email    { background-image: url(../social/mail.png); } 
+.kimaiga .social a.email    { background-image: url(../social/mail.png); } */
 
 .kimaiga .social {
 		text-align: center;
@@ -684,9 +684,5 @@ footer {
 		letter-spacing: 0.2em;
 }
 
-/*animated background*/
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-}
+
 
