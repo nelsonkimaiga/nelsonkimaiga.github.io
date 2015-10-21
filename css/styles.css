@@ -341,8 +341,8 @@ display: inline-block;
     /*background-color:;*/
     background-size: cover;
     min-height: 600px;
-        position: relative;
-        background-image: url(../images/abstract1.jpg);
+    position: relative;
+    background-image: url(../images/abstract1.jpg);
 }
 .banner-info{
     background: url(../images/banner-in.jpg)no-repeat 0px 0px;
@@ -372,6 +372,55 @@ font-size: 2.6em;
     font-weight: 100;
 }
 
+/*-- about --*/
+.about{
+	padding:6em 0 5em;
+}
+.head-section h2{
+	font-weight: 900;
+	color: #595959;
+	font-size: 2.3em;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0 0 0.4em;
+}
+.head-section span{
+	width:8%;
+	margin:0 auto;
+	background:#D8D8D8;
+	display:block;
+	height:7px;
+}
+.about-left-grid h3{
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-weight:700;
+	color:#595959;
+	font-size:1.5em;
+}
+.about-left-grid span{
+	margin:0.5em 0;
+	padding:0;
+	display:block;
+	text-transform:uppercase;
+	font-weight:600;
+	color:#595959;
+	font-size:1em;
+}
+.about-left-grid p{
+	color:#7c7c7c;
+	font-size:0.9em;
+	line-height:1.9em;
+	margin:0;
+	margin-top:1em;
+}
+.about-right-grid img{
+	width:100%;
+}
+.about-grids{
+	margin-top:4em;
+}
 
 /*avatar*/
 .kimaiga.avatar {
