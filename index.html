@@ -117,107 +117,88 @@
             <p class="p-text">paragraph</p>
           </div>
 
-
-
-
-<!--container for div-->
-<div id="container">
-<h2><span><em class="lefty">SHORT BIO</em><em class="righty"> My Principles</em></span></h2>
-
-    <section class="portfolio">
-
-      <section class="column">
-        <p>
-          I'm a developer using the most sought after <a href="http://modernizr.com">technologies</a> and <a href="http://paidhq.com/payment">platforms</a> to come up with solutions in web design.
-          
-          Embracing version control and contribution to other developers' work through using <a href="http://github.com/nelsonkimaiga">GitHub</a> as well as partcipating in open sources activities such as Pro bono work.
-        
-          <br/><br/>
-
-          Most importantly, I'm a young man who wakes up to new challenges
-          each day. 
-        </p>
-      </section>
-      <section class="column principles">
-        <p>
-          Measuring programming progress by lines of code is like measuring aircraft building progress by weight.
-        </p>
-        <p>
-          Design can never be <em>too</em> simple.
-        </p>
-        <p>
-          Good code has its own written documentation.
-        </p>
-        <p>
-          Prototypes provide a path.
-        </p>
-        <p>
-          Persistence trumps talent.
-        </p>
-    <script type="text/javascript" src=>
-"http://www.greatquoteslibrary.com/support-files/daily-quote-wisdom.js"></script>    
-<!--My skills-->
-<div        <ul class="skills">
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-          <li class="js">JavaScript</li>
-          <li class="java">Java</li>
-          <li class="Android">Android</li>
-        </ul>
+<!--div class="col-md-6 about-right-grid">
+            <a class="popup-with-zoom-anim" href="#small-dialog"><img src="images/video.jpg" title=""></a>
+          </div-->
+<!--skills-->
+   <!--My skills-->
+<div class="skills" id="skills">
+  <div class="container">
+    <div class="skills-info">
+      <h3>Skills</h3>
+      <span> </span>
+        <div class="study2">
+            <h4>Html</h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">80% Complete (success)</span>
+                </div>
+              </div>
+            <h4>Css</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+              <span class="sr-only">70% Complete</span>
+              </div>
+            </div>
+            <h4>Js</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+              <span class="sr-only">30% Complete (warning)</span>
+              </div>
+            </div>
+            <h4>Android</h4><h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              <span class="sr-only">20% Complete (danger)</span>
+              </div>
+            </div>
+            </h4>
+      </div>
+    </div>
+  </div>
 </div>
-      </section>
+<!-- end of skills -->
+<!--light-box-js -->
+        <script src="js/jquery.chocolat.js"></script>
+        <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+        <!--light-box-files -->
+        <script type="text/javascript" charset="utf-8">
+        $(function() {
+          $('.moments-bottom a').Chocolat();
+        });
+        </script> 
+<!-- < portfolio section-->
 
-    </section>
-<h2><span><em>My Current WEB PROJECTS</em></span></h2>
-
-    <section class="portfolio">
-
-      <section class="column">
-        <a class="item" href="https://nelsonkimaiga.bitballoon.com/"><img src="images/nelsonkimaiga.png" alt="personal github page" /></a>
-        <a class="item" href="https://kimaigafrontend.bitballoon.com"><img src="images/FrontEnd.png" alt="Gnome PSD site" /></a>
-        
-      </section>
-      <section class="column">
-           <a class="item" href="https://delanipsd.bitballoon.com/"><img src="images/delani.png" alt="Delani Studios" /></a>
-        </section>
-
-</section>    
-
-<h2><span><em>Contact Me</em></span></h2>
-    
-    <section id="contact">
-      <h2>Looking forward to working with you.</h2>
-      <h3>Know my portfolio better. Talk to me.</h3>
-  <form onsubmit="return checkForm();" method="post" action="mailto:nelsonkimaiga@aol.com">
-        <p>
-
-          <label for="name">Name:</label>
-          <input type="text" id="name" class="field" placeholder="Name" />
-        </p>
-        <p>
-          <label for="email">Email Address:</label>
-          <input type="text" id="email" class="field" placeholder="Email" />
-        </p>
-        <p>
-          <label for="subject">Your Subject</label>
-          <input type="text" id="subject" class="field" placeholder="Subject" />
-        </p>
-        <p>
-          <label for="message">Your Message:</label>
-          <textarea id="message" rows="5" cols="100" class="field" placeholder="Message"></textarea>
-        </p>
-        <div id="status">
-          <div class="button">
-            <button id="submit"  value="Send email">Submit</button>
-            
-            <div id="success" class="message" style="display:none">Message sent.</div>
-            <div id="error" class="message" style="display:none;">Something went wrong.</div>
-          </div>
+<div id="portfolio" class="portfolio">
+      <div class="container">
+        <h3>Portfolio</h3>
+        <span> </span>
+        <div class="gallery-info">
+        <div class="col-md-4 galry-grids moments-bottom">
+          <a class="b-link-stripe b-animate-go" href="images/img9.jpg">
+            <img src="images/img9.jpg" class="img-responsive" alt="">
+            <div class="b-wrapper">
+              <span class="b-animate b-from-left    b-delay03 ">
+                <img class="img-responsive" src="images/e.png" alt=""/>
+              </span>         
+            </div>
+          </a>        
         </div>
-
-      </form>
-
-    </section>
+        <div class="col-md-4 galry-grids moments-bottom">
+          <a class="b-link-stripe b-animate-go" href="">
+            <img src="" class="img-responsive" alt="">
+            <div class="b-wrapper">
+              <span class="b-animate b-from-left b-delay03 ">
+                <img class="img-responsive" src="" alt=""/>
+              </span>         
+            </div>
+          </a>        
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+      </div>
+</div>
+<!--/portfolio-->
 
     <!--footer-->
 <footer>
