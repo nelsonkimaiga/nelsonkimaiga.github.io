@@ -86,6 +86,7 @@
         <h1>Nelson Kimaiga</h1>
         <h2>Cross-platform Web and Mobile Software Developer</h2>
         <a href="#" class="hvr-bounce-to-right">DOWNLOAD MY RESUME</a>
+
       </div>
     </div>
   </div>
@@ -226,7 +227,7 @@
         <h3>Drop me a line</h3>
         <div class="stripb"> </div>
         <!-- contact form -->
-        <form onsubmit="return checkForm();" method="post" action="mailto:nelsonkimaiga@aol.com">
+        <!--form onsubmit="return checkForm();" method="post" action="mailto:nelsonkimaiga@aol.com">
         <p>
 
           <label for="name">Name:</label>
@@ -253,7 +254,16 @@
           </div>
         </div>
 
-      </form>
+      </form-->
+        <form>
+          <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+          <input type="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
+          <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+
+
 <div class="clearfix"> </div>
     </div>
   </div>
