@@ -48,6 +48,7 @@ body,html {
 margin:0; 
 padding: 0; 
 width: 100%;
+font-family: 'Open Sans', sans-serif;
 }
 
 body a{
@@ -74,9 +75,7 @@ ol,ul {
 /*body styling*/
 body {
 	background:  url("") repeat-x center top fixed;
-	color: #444948;
-	font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif;
-
+	color: #444948;	
 }
 
 a {
@@ -84,8 +83,8 @@ a {
 	color: #214a64;
 }
 
-p strong {
-	font-family: ProximaNovaSemiBold;
+p {
+	margin 0;
 }
 
 h1 {
