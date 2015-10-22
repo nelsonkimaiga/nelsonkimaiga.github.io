@@ -531,6 +531,96 @@ img.img-responsive.glry-img {
 }
 
 /*-- contact --*/
+.contact {
+  margin-bottom: 8em;
+}
+.content_middle_bottom {
+  padding: 8em 0 0 0;
+}
+.tz-title-3 {
+  display: block;
+  color: #A7A9AC;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 24px 0;
+  position: relative;
+  text-align: center;
+  letter-spacing: 0px;
+  font-family: 'Signika', sans-serif;
+  font-style: italic;
+}
+.content_middle_bottom h4 {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 50%;
+  margin: 0 auto 3em auto;
+  text-align: center;
+  font-weight: 400;
+}
+.grid_2 input[type="text"] {
+  padding: 15px 0;
+  width: 90%;
+    font-size: 1em;
+  margin: 10px 0;
+  color: #999;
+  background: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid #D4D4D4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.grid_2 textarea {
+  background: none;
+  display: block;
+  width: 90%;
+  padding: 15px 0;
+  border-bottom: 1px solid #D4D4D4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  margin: 3px 0;
+  font-size: 1em;
+  color: #999;
+  height: 100px;
+  resize: none;
+}
+.map iframe {
+  border: none;
+  width: 100%;
+  height: 328px;
+}
+.grid_2 input[type="submit"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  background: #b9cfed;
+  padding: 10px 40px;
+  margin-top: 2em;
+  	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+.grid_2 input[type="submit"]:hover {
+  background: #000;
+  	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+/*more contact form rules*/
 .contact{
 padding:60px 0 0 0;
 }
@@ -593,32 +683,82 @@ font-size:20px;
   margin: 30px 0 0 0;
   font-weight: 800;
 }
-#toTopHover {
-    width: 32px;
-    height: 32px;
-    display: block;
-    overflow: hidden;
-    float: right;
-    opacity: 0;
-    -moz-opacity: 0;
-    filter: alpha(opacity=0);
+.contact-right input[type="text"]:hover,.contact-right textarea:hover {
+border:3px solid #595959;
+		transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
-#toTop {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    bottom: 20px;
-    right: 2%;
-    overflow: hidden;
-    z-index: 999;
-    width: 32px;
-    height: 32px;
-    border: none;
-    text-indent: 100%;
-    background: url("../images/arrow.png") no-repeat 0px 0px;
+.contact-right input[type="text"] {
+    border: 3px solid rgba(0, 0, 0, 0.07);
+border-radius:2px;
+font-family: 'Lato', sans-serif;
+	width: 47.65%;
+	outline: none;
+	padding: 14px;
+	font-size: 18px;
+	font-weight:300;
+	color: #c9c9cb;
+	margin: 0 24px 24px 0;
+			transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+.contact-right textarea {
+    border: 3px solid rgba(0, 0, 0, 0.07);
+border-radius:2px;
+font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 200px;
+	outline: none;
+	font-weight:300;
+	font-size: 18px;
+	color: #c9c9cb;
+	resize: none;
+	padding: 14px;
+	margin-bottom: 24px;
+			transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+.contact-right input[type="text"]:nth-child(2),.coment-form input[type="text"]:nth-child(2){
+margin-right:0;
+}
+.contact-right form input[type="submit"] {
+color:#D8D8D8;
+font-family: 'Lato', sans-serif;
+  background: url(../images/mess.png) no-repeat 81px 14px;
+  width: 49%;
+  border-radius: 4px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0;
+     border: 3px solid rgba(0, 0, 0, 0.07);
+     		transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+.contact-right form input[type="submit"]:hover {
+ border: 3px solid #2c58ed;
+ color:#2c58ed;
+ 		transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
 
-*-- responsive-design --*/
+
+/*-- responsive-design --*/
 @media only screen and (max-width:1440px) {
 	.banner-text {
 	    left: 15em;
