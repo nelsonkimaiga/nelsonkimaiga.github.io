@@ -177,7 +177,7 @@ h1 a {
     font-size: 0.875em;
 }
 .search-bar input[type="submit"] {
-    background: url(../images/)no-repeat 0px 0px;
+    background: url(../images/search.png)no-repeat 0px 0px;
     outline: none;
     -webkit-appearance: none;
     border: 0;
@@ -345,9 +345,9 @@ display: inline-block;
     background-image: url(../images/abstract1.jpg);
 }
 .banner-info{
-    background: url(../images/Kimaiga.jpg)no-repeat 0px 0px;
-    width: 200px;
-    height: 200px;
+    background: url(../images/avatar.jpg)no-repeat 0px 0px;
+    width: 400px;
+    height: 400px;
     margin: 17.5% auto 0;
 }
 .banner-text{
