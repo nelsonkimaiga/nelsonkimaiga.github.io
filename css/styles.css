@@ -1,19 +1,19 @@
-body,h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
-ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,legend,
-input,button,select,textarea,dl,dd,dt,hr,table,thead,tbody,tfoot,tr,th,td
-{ margin:0; padding:0 }
+/*body,h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }*/
+/*ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,legend,
+/*input,button,select,textarea,dl,dd,dt,hr,table,thead,tbody,tfoot,tr,th,td
+/*{ margin:0; padding:0 }*/
 
-img,a img,:link img,:visited img { border:0;padding:0;margin:0; }
+/*img,a img,:link img,:visited img { border:0;padding:0;margin:0; }*/
 
-address,cite,caption { font-style: normal }
+/*address,cite,caption { font-style: normal }*/
 
-caption,th { text-align: left }
+/*caption,th { text-align: left }*/
 
-ol,ul { margin:0; margin-left: 25px; }
+/*ol,ul { margin:0; margin-left: 25px; }*/
 
-a,button { outline: 0; }
+/*a,button { outline: 0; }*/
 
-input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, button::-moz-focus-inner { border: 0px; }
+/*input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, button::-moz-focus-inner { border: 0px; }*/
 
 @font-face{
 	font-family:ProximaNovaLight;
@@ -44,13 +44,6 @@ input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, 
 
 
 /*----body styles-*/
-body,html { 
-margin:0; 
-padding: 0; 
-width: 100%;
-font-family: 'Open Sans', sans-serif;
-}
-
 body a{
 		transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -110,9 +103,13 @@ body a:hover{
 
 
 /*body styling*/
-body {
-	background:  url("") repeat-x center top fixed;
-	color: #444948;	
+body,html { 
+margin:0; 
+padding: 0; 
+width: 100%;
+font-family: 'Open Sans', sans-serif !important;
+font-size: 100%;
+background: #fff;
 }
 
 a {
@@ -142,6 +139,7 @@ h1 a {
 
 .header {
     padding: .6em 0;
+    height: 73.767px;
 }		
 
 /*bounce effect for my header*/	
@@ -164,6 +162,7 @@ h1 a {
 .navigation{
 	float: left;
 	width: 52%;
+  margin-bottom: 0;
 }
 .search-bar{
  width: 21%;
@@ -345,7 +344,7 @@ display: inline-block;
 }
 
 .banner {
-    /*background-color:;*/
+    /*background-color:red;*/
     background-size: cover;
     min-height: 650px;
     position: relative;
