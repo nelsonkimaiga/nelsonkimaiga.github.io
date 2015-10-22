@@ -340,15 +340,19 @@ display: inline-block;
 .banner {
     /*background-color:;*/
     background-size: cover;
-    min-height: 600px;
+    min-height: 650px;
     position: relative;
     background-image: url(../images/abstract1.jpg);
+
 }
+
+
 .banner-info{
     background: url(../images/avatar.jpg)no-repeat 0px 0px;
-    width: 400px;
+    width: 385px;
     height: 400px;
     margin: 17.5% auto 0;
+    border-radius: 50%;
 }
 .banner-text{
 position: absolute;
