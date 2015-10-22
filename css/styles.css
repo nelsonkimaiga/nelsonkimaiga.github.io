@@ -58,7 +58,13 @@ body a{
 	-o-transition: 0.5s all ease;
 	-ms-transition: 0.5s all ease;
 }
-
+p{
+	margin: 0;
+}
+ul,label{
+	margin: 0;
+	padding: 0;
+}
 
 body,h1,h2,h3,h4,h5,h6,pre,code { 
 	font-size: 1em; 
@@ -133,11 +139,12 @@ h1 a {
 		background: url(images/logo.png) no-repeat 0 0;
 		border: 0;
 		}
-/*bounce effect for my header*/	
-.header{
-	padding: .6em 0;
-}
 
+.header {
+    padding: .6em 0;
+}		
+
+/*bounce effect for my header*/	
 .logo{
 	width: 23%;
 	float: left;
@@ -815,53 +822,6 @@ font-family: 'Lato', sans-serif;
 		margin: 0 auto;
 	}
 
-#container {
-	margin: 526px auto 0 auto;
-	width: 100%;
-	background: #fff;
-	position: relative;
-	box-shadow: 0 0 5px rgba(0,0,0,.2);
-	z-index: 3;
-	padding-top: 20px;
-	vertical-align: top;
-}
-
-#container h2 {
-	border-bottom: 1px solid #f4f3f3;
-	display: block;
-	width: 100%;
-	font-size: 0.8em;
-	font-weight: bold;
-	padding: 0;
-	margin: 0 0 20px 0;
-	font-family: ProximaNovaSemiBold;
-	height: 50px;
-}
-
-	#container h2 span {
-		margin: 0;
-		display: block;
-		width: 780px;
-		margin: 0 auto;
-	}
-
-	#container h2 span em {
-		border-bottom: 1px solid #444948;
-		font-style: normal;
-		display: inline-block;
-		padding: 20px 0;
-		height: 10px;
-	}
-
-/*--dividing my container into left and right*/
-#container h2 span em.lefty { 
-	float: 
-	left; 
-}
-#container h2 span em.righty { 
-	float: left; margin-left: 380px; }
-
-
 .portfolio {
 	width: 780px;
 	overflow: hidden;
@@ -1240,41 +1200,7 @@ footer {
 		height: 101px;
 		margin: 0 auto;
 	}
-.kimaiga{
-	background-image: url(../images/abstract1.jpg);
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	height: 526px;
-	background-size: ;
-	display: block;
-	font-size: 14px;
-    padding-top: 20px;
-	font-weight: normal;
-	color: rgba(255,255,255,0.6);
-	font-family: ProximaNovaLight;
-	letter-spacing: 0.2em;
-	animation: animatedBackground 20s linear infinite;
-	}
-.kimaiga h2{
-		text-transform: uppercase;
-		color: #fff;
-		text-align: center;
-		display: block;
-		font-size: 3em;
-		line-height: 1em;
-		padding-top: 20px;
-	}
-/*text within the span tags in kimaiga class*/
-.kimaiga span {
-	display: block;
-		font-size: 30px;
-		padding-top: 20px;
-		font-weight: normal;
-		color: rgba(255,255,255,0.6);
-		font-family: ProximaNovaLight;
-		letter-spacing: 0.2em;
-}
+
 
 
 
