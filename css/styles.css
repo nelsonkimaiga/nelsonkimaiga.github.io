@@ -1022,33 +1022,51 @@ ul,label{
 		color: red;
 	}
 	
-footer {
-	width: 780px;
-	display: block;
-	margin: 0 auto;
-	padding-top: 30px;
-	text-align: center;
-	font-size: 11px;
-	color: #3F372F;
-	padding-bottom: 60px;
-	position: relative;
-	font-family: ProximaNovaSemibold;
-	text-align: right;
+/*footer section*/
+.copy {
+    background: #2c58ed;
+    padding: 2em 0;
+    text-align: center;
+}
+.copy p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.copy p a {
+    color: #fff;
+}
+.copy p a:hover {
+    color: #999;
+}
+/*--/footer--*/
+#toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/arrow.png") no-repeat 0px 0px;
 }
 
-	footer p {
-		padding-bottom: 0;
-		margin: 0 auto;
-		display: block;
-		clear: both;
-	}
 
-	footer a {
-		color: #4F4740;
-		text-decoration: none;
-	}
-
-		footer a:hover {
+/*	footer a:hover {
 			color: #fff;
 			border-bottom-color: #fff;
 		}
@@ -1061,15 +1079,15 @@ footer {
 	footer .twitter-follow-button {
 		position: absolute;
 		left: 0;
-	}
+	}*/
 		
-	#totop {
-		position: fixed;
-		bottom: 5px;
-		right: 10px;
-		font-size: 0.8em;
-		text-transform: uppercase;
-	}
+	/*#totop {*/
+		/*position: fixed;*/
+		/*bottom: 5px;*/
+		/*right: 10px;*/
+		/*font-size: 0.8em;*/
+		/*text-transform: uppercase;*/
+	/*}*/
 
 
 /* From animate.css */
@@ -1200,7 +1218,3 @@ footer {
 		height: 101px;
 		margin: 0 auto;
 	}
-
-
-
-
