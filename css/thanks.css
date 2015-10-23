@@ -1,1 +1,14 @@
-/*thank you*/
+/*aniated bacground*/
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+html { 
+  background: url(../images/laptop.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation: animatedBackground 40s linear infinite;
+}
+
