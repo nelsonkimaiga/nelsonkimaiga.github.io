@@ -19,7 +19,52 @@
 <!-- js -->
 <script src="js/jquery.min.js"> </script>
 <script src="js/bootstrap.js"></script>
-<script type="text/javascript" src="mail.js"></script>
+<script type="text/javascript">
+  function form(){
+    var name = document.contactForm.name;
+    var email = document.contactForm.email;
+    var message = document.contactForm.message;
+
+    if (name.value == "")
+    {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+     if ((isNaN(phone.value)) || (phone.value == "") || (phone.value < 10))
+    {
+        window.alert("Please enter your phone number.");
+        phone.focus();
+        return false;
+    }
+    if (email.value == "")
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf("@", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf(".", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if (message.value == "")
+    {
+        window.alert("Please provide a message.");
+        message.focus();
+        return false;
+    }
+    return true;
+}
+</script>
 <!-- //js -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
@@ -275,7 +320,7 @@
           <li>Nairobi, Kenya </li>
           <li>0721496346</li>
           <li><a href="mailto:nelsonkimaiga@aol.com">nelsonkimaiga@aol.com</a></li>
-          <li><a href="#http://nelsonkimaiga.github.io">Social: </a></li>
+          <li><a href="http://nelsonkimaiga.github.io">Social: </a></li>
         </ul>
 <a title="Github" style="padding-left:4px;padding-right:4px;" href="https://github.com/nelsonkimaiga"target="github"><i class="fa fa-github-square fa-3x"></i></a>
 <a title="LinkedIn" style="padding-left:4px;padding-right:4px;" href="ke.linkedin.com/in/nelsonkimaiga"target="linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -288,13 +333,36 @@
       <div class="col-md-7 contact-right">
         <h3>Drop me a line</h3>
         <div class="stripb"> </div>
-        <!-- <form action="" method="POST" onsubmit="return form();" name="contactForm"> -->
-        <form action="#" id="form" method="post" name="form">
+        <!-- <form action="//formspree.io/nelasponchob@gmail.com" method="POST" onsubmit="return form();" name="contactForm"> -->
+        <!--form action="//formspree.io/nelsonkimaiga@aol.com" method="POST" onsubmit="return form();" name="contactForm" >
           <input type="text" name= "name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
           <input type="email" name="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
           <textarea type="text" name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
-          <input type="submit" name="submit" value="SEND">
-        </form>
+          <input type="submit" value="SEND">
+          <input type="hidden" name="_next" value="thanks.html" />
+      <input type="hidden" name="_subject" value="Message from your website" />
+        </form-->
+        <form action="http://formspree.io/nelsonkimaiga@aol.com" method="POST" onsubmit="return form();" name="contactForm" >
+          <div class="input-field col s12">
+          <input id="first_name" type="text" value="Name" name="name" class="validate">
+          <label style="color:rgba(53,145,204,1);" for="first_name"><i class="fa fa-smile-o"></i>
+Name</label>
+        </div>
+          <div class="input-field col s12">
+          <input id="phone" type="text" value="Number" name="phone" class="validate">
+          <label style="color:rgba(53,145,204,1);" for="phone"><i class="fa fa-phone"></i>
+Phone number</label>
+        </div>
+   
+     <div class="input-field col s12">
+          <input id="email" type="text" value="Email" name="email" class="validate">
+          <label style="color:rgba(53,145,204,1);" for="email"><i class="fa fa-envelope-o"></i>
+Email</label>
+        </div>
+          <div class="input-field col s12">
+          <textarea id="textarea" type="textarea" name="message" class="materialize-textarea" length="100"></textarea>
+        </div>
+      <input class="btn btn-default begin" type="submit" value="SEND" style="padding:left:14px;padding-right:14px;padding-top:0px;border-radius:0px;text-align:center;" />
       </div>
       <div class="clearfix"> </div>
     </div>
