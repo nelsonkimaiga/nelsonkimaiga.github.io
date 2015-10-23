@@ -537,7 +537,7 @@ img.img-responsive.glry-img {
 .grid_2 input[type="text"] {
   padding: 15px 0;
   width: 90%;
-    font-size: 1em;
+  font-size: 1em;
   margin: 10px 0;
   color: #999;
   background: none;
@@ -547,6 +547,7 @@ img.img-responsive.glry-img {
   border-top: none;
   border-left: none;
   border-right: none;
+  vertical-align: middle;
 }
 .grid_2 textarea {
   background: none;
