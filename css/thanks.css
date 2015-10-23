@@ -4,7 +4,7 @@
 	to { background-position: 100% 0; }
 }
 html { 
-  background: url(../images/laptop.jpg) no-repeat center center fixed; 
+  background: url(../images/feedback.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,3 +12,13 @@ html {
   animation: animatedBackground 40s linear infinite;
 }
 
+.banner-text{
+position: absolute;
+    top: 18em;
+    left: 18em;
+    color: #fff;
+    font-family: 'Berkshire Swash', cursive;
+    /*font-weight: 100;*/
+    /*font-size: 3.1em;*/
+    /*text-align: center;*/
+}
