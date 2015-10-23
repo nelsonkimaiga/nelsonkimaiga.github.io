@@ -1,7 +1,8 @@
 html, body{
     font-size: 100%;
-  background: #fff;
+  /*background: #fff;*/
   font-family: 'Open Sans', sans-serif !important;
+  color:rgba(0,0,0,0.4);
 }
 body a{
     transition: 0.5s all ease;
@@ -9,6 +10,7 @@ body a{
   -moz-transition: 0.5s all ease;
   -o-transition: 0.5s all ease;
   -ms-transition: 0.5s all ease;
+  /*color: white;*/
 }
 p{
   margin:0;
@@ -769,9 +771,10 @@ color:#fff;
 /*-- contact --*/
 /*--footer--*/
 .copy {
-    background: #708090;
+    background-color:rgba(0,0,0,0.8);;
     padding: 2em 0;
     text-align: center;
+    color: #fff
 }
 .copy p {
     font-size: 1em;
