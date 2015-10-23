@@ -19,6 +19,7 @@
 <!-- js -->
 <script src="js/jquery.min.js"> </script>
 <script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="mail.js"></script>
 <!-- //js -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
@@ -274,7 +275,7 @@
           <li>Nairobi, Kenya </li>
           <li>0721496346</li>
           <li><a href="mailto:nelsonkimaiga@aol.com">nelsonkimaiga@aol.com</a></li>
-          <li><a href="http://nelsonkimaiga.github.io">Social: </a></li>
+          <li><a href="#http://nelsonkimaiga.github.io">Social: </a></li>
         </ul>
 <a title="Github" style="padding-left:4px;padding-right:4px;" href="https://github.com/nelsonkimaiga"target="github"><i class="fa fa-github-square fa-3x"></i></a>
 <a title="LinkedIn" style="padding-left:4px;padding-right:4px;" href="ke.linkedin.com/in/nelsonkimaiga"target="linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -287,11 +288,12 @@
       <div class="col-md-7 contact-right">
         <h3>Drop me a line</h3>
         <div class="stripb"> </div>
-        <form>
-          <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-          <input type="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
-          <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
-          <input type="submit" value="SEND">
+        <!-- <form action="" method="POST" onsubmit="return form();" name="contactForm"> -->
+        <form action="#" id="form" method="post" name="form">
+          <input type="text" name= "name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+          <input type="email" name="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
+          <textarea type="text" name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
+          <input type="submit" name="submit" value="SEND">
         </form>
       </div>
       <div class="clearfix"> </div>
