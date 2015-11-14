@@ -251,7 +251,7 @@ display: inline-block;
 }
 .banner {
     /*background-color: #2c58ed;*/
-    background-image: url(../images/abstract1.jpg);
+    /*background-image: url(../images/abstract1.jpg);*/
     background-size: cover;
     min-height: 600px;
     position: relative;
