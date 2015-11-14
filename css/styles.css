@@ -372,6 +372,18 @@ p {
     }
 }
 
+/*about me*/
+.about-container {
+    background: #2a2d38;
+    min-height: 600px;
+}
+
+.banner {
+    background: url("../images/Prabaharan-CS-digital-expert-banner.jpg") no-repeat bottom left;
+    background-size: cover;
+    min-height: 350px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1) inset;
+}
 
 
 
