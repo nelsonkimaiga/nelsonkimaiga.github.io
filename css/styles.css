@@ -1,26 +1,3 @@
-/*html, body{
-    font-size: 100%;
-  font-family: 'Open Sans', sans-serif !important;
-  color:rgba(0,0,0,0.4);
-}
-body a{
-    transition: 0.5s all ease;
-  -webkit-transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  -o-transition: 0.5s all ease;
-  -ms-transition: 0.5s all ease;
-}
-p{
-  margin:0;
-}
-ul,label{
-  margin:0;
-  padding:0;
-}
-body a:hover{
-  text-decoration:none;
-}*/
-
 html,
 body {
     font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
@@ -40,6 +17,145 @@ h6,
     text-transform: uppercase;
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+
+.btn {
+    padding-right: 25px;
+    padding-left: 25px;
+    transition: all .5s ease-in;
+}
+.cover-button .btn-success:hover {
+    background-color: #1e2e4d;
+    color: #fff
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 300;
+    margin: 30px 0 10px 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+.cssda {
+  top:100px;
+    display: inline-block;
+    width: 40px; height: 48px;
+    background: url(../images/award-nominee-cssda-160-r.png) no-repeat;
+}
+.award-badge {
+    position: fixed;
+    right: 0;
+    z-index: 500;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .cssda {
+        width: 80px; height: 96px;
+    }
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+    padding: 15px;
+    position: relative;
+    z-index: 2000;
+    width: 100%;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: all .5s ease;
+}
+
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-brand img {
+    width: 26px;
+    transition: all .5s ease;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+
+.masthead-nav > li + li {
+    margin-left: 10px;
+}
+
+.masthead-nav > li > a {
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #7afbc4;
+}
+
+.masthead-brand {
+    float: left;
+}
+
+.masthead-nav {
+    float: right;
+}
+
+.masthead {
+    position: fixed;
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand img {
+        width: 48px;
+    }
+    .masthead-nav > li + li {
+        margin-left: 20px;
+    }
+    .masthead-nav > li > a {
+        font-size: inherit;
+    }
+    .section-title {
+        font-size: 48px;
+        margin: 50px 0 30px 0;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+
+.sticky .masthead-brand img {
+    width: 26px;
+}
+
+.sticky.masthead {
+    background: #00196F;
+    padding: 3px 15px;
+}
+
+
+
+
+
+
+
+
 
 .navbar-default {
     background-color: #fff;
