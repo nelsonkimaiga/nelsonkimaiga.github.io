@@ -149,6 +149,134 @@ p {
     padding: 3px 15px;
 }
 
+/*cover section*/
+.cover-container {
+    background: #555555;
+    overflow: hidden
+}
+
+.cover-wrapper {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+    z-index: 500;
+}
+
+.cover-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover-hello {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+    color: #7afbc4;
+}
+
+.cover-heading {
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0;
+    color: #fff;
+}
+
+.cover-designation {
+    font-size: 22px;
+    color: #7afbc4;
+    text-transform: none;
+    margin: 0;
+    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+}
+
+
+.social {
+    margin-top: 50px;
+}
+
+.social a {
+    margin: 10px;
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background: no-repeat;
+    border-radius: 50%;
+    background-size: contain;
+    transition: all .2s ease-in;
+}
+
+.social a:hover {
+    background-color: #fff;
+    border: 5px solid #fff;
+}
+
+.social.gray a:hover {
+    background-color: #7afbc4;
+    border: 5px solid #7afbc4;
+}
+
+.social.blue a.fb {
+    background-image: url(../images/fb-blue.png);
+}
+
+.social.blue a.tw {
+    background-image: url(../images/tw-blue.png);
+}
+
+.social.blue a.in {
+    background-image: url(../images/in-blue.png);
+}
+
+.social.gray a.fb {
+    background-image: url(../images/fb-gray.png);
+}
+
+.social.gray a.tw {
+    background-image: url(../images/tw-gray.png);
+}
+
+.social.gray a.in {
+    background-image: url(../images/in-gray.png);
+}
+
+.cover-button {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    z-index: 600;
+}
+@media (min-width: 768px) {
+   .cover-hello {
+        font-size: 20px;
+    }
+
+    .cover-heading {
+        font-size: 80px;
+    }
+
+    .cover-designation {
+        font-size: 26px;
+    }
+    .social a {
+    margin: 20px;
+    }
+}
+
+#canvasAnimation {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 400;
+}
+.static-bg {
+    background: #00196F url(../images/home-mob-bg.jpg) no-repeat center center;
+    background-size: contain;
+}
 
 
 
