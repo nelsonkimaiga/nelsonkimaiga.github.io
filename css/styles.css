@@ -1,6 +1,5 @@
-html, body{
+/*html, body{
     font-size: 100%;
-  /*background: #fff;*/
   font-family: 'Open Sans', sans-serif !important;
   color:rgba(0,0,0,0.4);
 }
@@ -10,7 +9,6 @@ body a{
   -moz-transition: 0.5s all ease;
   -o-transition: 0.5s all ease;
   -ms-transition: 0.5s all ease;
-  /*color: white;*/
 }
 p{
   margin:0;
@@ -21,7 +19,28 @@ ul,label{
 }
 body a:hover{
   text-decoration:none;
+}*/
+
+html,
+body {
+    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    color: #666;
+    text-align: center;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.section-title,
+.cover-heading {
+    text-transform: uppercase;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
 .navbar-default {
     background-color: #fff;
     border-color: #ff;
