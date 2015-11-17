@@ -108,14 +108,14 @@ p {
     color: #7afbc4;
 }
 
-.masthead img{
+/*.masthead img{
     display: block;
     border-radius:50%;
-    width: 89px;
+    width: 100px;
     height: 100px;
     margin: 0 auto;
 }
-
+*/
 .masthead-brand {
     float: left;
 }
