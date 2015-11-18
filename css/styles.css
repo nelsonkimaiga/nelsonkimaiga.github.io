@@ -286,73 +286,99 @@ p {
     background-size: contain;
 }
 
-/*PORTFOLIO*/
-.portfolio {
-  width: 780px;
-  padding: 20px 20px 40px;
-  overflow: hidden;
-  margin: 0 auto;
-  display: block;
+/*works/portfolio*/
+.works-container {
+    background: #ebfffc;
+    min-height:1000px;
 }
 
-  .portfolio img {
+.works_list {
+    padding-bottom: 50px;
+    font-size: 0;
+}
+
+.works_list ul {
+    padding-left: 0;
+}
+
+.works_list .item {
+    display: inline-block;
+    width: 25%;
+    min-width: 200px;
+}
+
+.works_list .item img {
+    width: 100%;
+}
+
+.work_list .isotope {
+    overflow: hidden!important;
+}
+
+.work_details {
+    width: 100%;
     max-width: 100%;
-  }
+    background-color: rgba(0, 25, 111, 0.8);
+    z-index: 1000!important;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
 
-  .portfolio section.thirds {
-    width: 240px;
-    float: left;
-  }
+.auto_height {
+    height: 100%;
+}
 
-    .portfolio section.thirds:nth-child(2) {
-      padding-left: 30px;
-      padding-right: 30px;
+.work_details h4 {
+    font-size: 16px;
+    padding: 20px 10px 0 10px;
+    ;
+    color: #fff;
+}
+
+.work_details p {
+    font-size: 12px;
+    padding: 3px 10px 3px 10px;
+    color: #fff;
+}
+
+.work_details > div > a {
+    font-size: 14px;
+    text-decoration: none!important;
+    color: #000;
+    display: block;
+    padding:20px 5px;
+    background: #7afbc4 ;
+    position: absolute; bottom: 0; left: 0; width: 100%; 
+}
+
+#filters button {
+    font-size: 16px;
+    color: #666;
+    background: transparent;
+    border: 0;
+    padding: 18px 19px;
+    outline: none;
+    cursor: pointer;
+}
+
+#filters button.active {
+    color: #36B693;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    #filters button {
+        font-size: 22px;
     }
-
-    .portfolio .item {
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-      margin-bottom: 30px;
-    }
-
-    .portfolio section.thirds .item {
-      width: 100%;
-      margin-bottom: 30px;
-      display: block;
-    }
-
-    .portfolio section.thirds img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-  .portfolio section.column {
-    width: 375px;
-    float: left;
-  }
-
-  .portfolio section.column:last-child {
-    padding-left: 30px;
-  }
-
-    .portfolio section a { font-family: ProximaNovaSemiBold; }
-
-    .portfolio section a.item {
-      position: relative;
-      display: block;
-      width: 375px;
-      overflow: hidden;
-      margin-bottom: 30px;
-      border: 0;
-    }
-
-    .portfolio section .icon {
-      margin-bottom: 30px;
-    }
-
-      .portfolio section a img {
-        display: block;
-      }
+}
 
 
 /*about me*/
