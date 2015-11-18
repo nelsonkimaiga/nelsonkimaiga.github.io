@@ -287,31 +287,42 @@
           <input type="hidden" name="_next" value="thanks.html" />
       <input type="hidden" name="_subject" value="Message from your website" />
         </form-->
-        <form action="http://formspree.io/nelsonkimaiga@aol.com" method="POST" onsubmit="return form();" name="contactForm" >
-          <div class="input-field col s12">
-          <input id="first_name" type="text" value="Name" name="name" class="validate">
-          <label style="color:rgba(53,145,204,1);" for="first_name"><i class="fa fa-smile-o"></i>
-Name</label>
+        <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
         </div>
-          <div class="input-field col s12">
-          <input id="phone" type="text" value="Number" name="phone" class="validate">
-          <label style="color:rgba(53,145,204,1);" for="phone"><i class="fa fa-phone"></i>
-Phone number</label>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
         </div>
-
-     <div class="input-field col s12">
-          <input id="email" type="text" value="Email" name="email" class="validate">
-          <label style="color:rgba(53,145,204,1);" for="email"><i class="fa fa-envelope-o"></i>
-Email</label>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"></textarea>
         </div>
-          <div class="input-field col s12">
-          <textarea id="textarea" type="textarea" name="message" class="materialize-textarea" length="100"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
         </div>
-      <input class="btn btn-default begin" type="submit" value="SEND" style="padding:left:14px;padding-right:14px;padding-top:0px;border-radius:0px;text-align:center;" />
-      <input type="hidden" name="_next" value="thanks.html" />
-      <input type="hidden" name="_subject" value="Message from your website" />
-      </div>
-      </form>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <!--Will be used to display an alert to the user-->
+        </div>
+    </div>
+</form>
       <div class="clearfix"> </div>
     </div>
   </div>
