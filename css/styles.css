@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    font-family: 'Raleway', serif;
     color: #666;
     text-align: center;
 }
@@ -15,7 +15,7 @@ h6,
 .section-title,
 .cover-heading {
     text-transform: uppercase;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: 'Raleway', serif;
 }
 
 .btn {
@@ -66,7 +66,7 @@ p {
     position: relative;
     z-index: 2000;
     width: 100%;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', serif;
     transition: all .5s ease;
 }
 
@@ -196,7 +196,7 @@ p {
     color: #7afbc4;
     text-transform: none;
     margin: 0;
-    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    font-family: 'Raleway', serif;
 }
 
 
