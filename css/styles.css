@@ -225,30 +225,6 @@ p {
     border: 5px solid #7afbc4;
 }
 
-.social.blue a.fb {
-    background-image: url(../images/fb-blue.png);
-}
-
-.social.blue a.tw {
-    background-image: url(../images/tw-blue.png);
-}
-
-.social.blue a.in {
-    background-image: url(../images/in-blue.png);
-}
-
-.social.gray a.fb {
-    background-image: url(../images/fb-gray.png);
-}
-
-.social.gray a.tw {
-    background-image: url(../images/tw-gray.png);
-}
-
-.social.gray a.in {
-    background-image: url(../images/in-gray.png);
-}
-
 .cover-button {
     position: absolute;
     width: 100%;
