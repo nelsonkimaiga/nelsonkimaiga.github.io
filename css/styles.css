@@ -225,6 +225,10 @@ p {
     border: 5px solid #7afbc4;
 }
 
+.social.gray{
+margin-top: 20px;
+}
+
 .cover-button {
     position: absolute;
     width: 100%;
