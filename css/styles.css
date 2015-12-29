@@ -108,14 +108,6 @@ p {
     color: #7afbc4;
 }
 
-/*.masthead img{
-    display: block;
-    border-radius:50%;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-*/
 .masthead-brand {
     float: left;
 }
@@ -368,7 +360,6 @@ margin-top: 20px;
 }
 
 .banner {
-    background: url("../images/") no-repeat bottom left;
     background-size: cover;
     min-height: 350px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .1) inset;
