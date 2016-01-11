@@ -94,7 +94,7 @@
                     <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#works">My Portfolio</a></li>
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="https://nelsonkimaiga.wordpress.com/">Blog</a></li>
+                    <li><a href="https://nelsonkimaiga.wordpress.com/" id="blog" rel="external">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -716,12 +716,12 @@
           });
     });
     
-    $('#home, #about, #works, #contact').waypoint(function() {
+    $('#home, #about, #works, #contact', 'https://nelsonkimaiga.wordpress.com#blog').waypoint(function() {
         activenav($(this));
     }, { offset: function() {
         return -$(this).height()+52;
       }});
-    $('#home, #about, #works, #contact').waypoint(function() {
+    $('#home, #about, #works, #contact', 'https://nelsonkimaiga.wordpress.com#blog').waypoint(function() {
         activenav($(this));
     }, { offset: '51px' });
     
