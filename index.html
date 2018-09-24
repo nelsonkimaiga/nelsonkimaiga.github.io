@@ -29,22 +29,18 @@
                 var y = document.forms["contactForm"]["phone"].value;
                 var z = document.forms["contactForm"]["email"].value;
                 var m = document.forms["contactForm"]["message"].value;
-
                 if (x == null || x == "") {
                     alert("Name must be filled out");
                     return false;
                 }
-
                 if (y == null || y == "" || (y.value < 10) || (isNaN(y.value))) {
                     alert("number must be filled out");
                     return false;
                 }
-
                 if (z == null || z == "") {
                     alert("email must be filled out");
                     return false;
                 }
-
                 if (m == null || m == "") {
                     alert("message must be filled out");
                     return false;
@@ -126,12 +122,13 @@
                                 <div class="detail_foot">
                                     <a href="https://aasopenresearch.org/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
                             </div> -->
-                        <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/grand-challenges.PNG" alt="Grand Challenges">
+                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/ma3-racer.png" alt="" height="7">
                             <div  class="work_details">
-                                <h4>Grand Challenges</h4>
-                                <p>Back-end web development</p>
+                                <h4>Ma3 Racer</h4>
+                                <p>Android Mobile development</p>
                                 <div class="detail_foot">
-                                    <a href="https://repository.grandchallenges.org/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
+                                    <a href="https://apkpure.com/ma3racer-1-5/com.PlanetRackus.Ma3Racer" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                </div>
                             </div>
                         <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/aascienc.png" alt="Grand Challenges">
                             <div  class="work_details">
@@ -189,7 +186,6 @@ s
                                     <a href="https://www.ocharge.co.ke/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
                                 </div>
                             </div>
-                       
                         <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/paintapp.png" alt="Calcujs" height="7">
                             <div  class="work_details">
                                 <h4>Let's Paint</h4>
@@ -437,169 +433,104 @@ s
 
         <!--javascript code-->
         <script id="texture_vertex_simulation_shader" type="x-shader/x-vertex">
-
             varying vec2 vUv;
-
             void main() {
-
             vUv = vec2(uv.x, 1.0 - uv.y);
             gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
-
             }
-
         </script>
         <script id="texture_fragment_simulation_shader" type="x-shader/x-fragment">
-
             // simulation
             varying vec2 vUv;
-
             uniform vec3 origin;
             uniform sampler2D tPositions;
-
             uniform float timer;
-
-
             float rand(vec2 co){
             return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
             }
-
             void main() {
-
-
             vec3 pos = texture2D( tPositions, vUv ).xyz;
-
             if ( rand( vUv + timer ) > 0.99 ) {
-
             pos = origin;
-
             vec3 random = vec3( rand( vUv + 1.0 ) - 1.0, rand( vUv + 2.0 ) - 1.0, rand( vUv + 3.0 ) - 1.0 );
             pos += normalize( random ) * rand( vUv + 1.0 );
-
             } else {
-
             float x = pos.x + timer;
             float y = pos.y;
             float z = pos.z;
-
             pos.x += sin( y * 3.3 ) * cos( z * 10.3 ) * 0.005;
             pos.y += sin( x * 3.5 ) * cos( z * 10.5 ) * 0.005;
             pos.z += sin( x * 3.7 ) * cos( y * 10.7 ) * 0.005;
-
             }
-
-
             // Write new position out
             gl_FragColor = vec4(pos, 1.0);
-
-
             }
-
-
         </script>
 
         <script id="vs-particles" type="x-shader/x-vertex">
-
             uniform sampler2D map;
-
             uniform float width;
             uniform float height;
-
             uniform float pointSize;
-
             varying vec2 vUv;
             varying vec4 vPosition;
             varying vec4 vColor;
-
             void main() {
-
             vec2 uv = position.xy + vec2( 0.5 / width, 0.5 / height );
             vec3 color = texture2D( map, uv ).rgb * 200.0 - 100.0;
-
             gl_PointSize = pointSize;
             gl_Position = projectionMatrix * modelViewMatrix * vec4( color, 1.0 );
-
             }
-
         </script>
 
         <script id="fs-particles" type="x-shader/x-fragment">
-
             uniform vec4 pointColor;
-
             void main() {
-
             gl_FragColor = pointColor;
-
             }
-
         </script>
 
         <script>
-
                     var container;
-
                     var scene, camera, light, renderer;
                     var geometry, cube, mesh, material;
-
                     var data, texture, points;
-
                     var controls;
-
                     var fboParticles, rtTexturePos, rtTexturePos2, simulationShader;
-
                     var planeMat, planeGeo, plane;
-
                     var isMobile = $.browser.mobile;
-
                     if (!isMobile) {
                         init();
                         animate();
                     } else {
                         $('#home').addClass('static-bg');
                     }
-
                     function init() {
-
                         container = document.createElement('div');
                         document.body.appendChild(container);
                         $('#canvasAnimation').append(container);
-
                         renderer = new THREE.WebGLRenderer();
                         renderer.setSize(window.innerWidth, window.innerHeight);
                         container.appendChild(renderer.domElement);
-
                         scene = new THREE.Scene();
-
                         camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000);
                         scene.add(camera);
-
                         controls = new THREE.OrbitControls2(camera);
                         controls.radius = 400;
                         controls.speed = 2;
-
                         //
-
                         var width = 900, height = 900;
-
                         if (!renderer.context.getExtension('OES_texture_float')) {
-
                             console.log('OES_texture_float is not :(');
-
                         }
-
                         // Start Creation of DataTexture
                         // Could it be simplified with THREE.FBOUtils.createTextureFromData(textureWidth, textureWidth, data); ?
-
                         data = new Float32Array(width * height * 3);
-
                         texture = new THREE.DataTexture(data, width, height, THREE.RGBFormat, THREE.FloatType);
                         texture.minFilter = THREE.NearestFilter;
                         texture.magFilter = THREE.NearestFilter;
                         texture.needsUpdate = true;
-
-
                         // zz85 - fbo init
-
                         rtTexturePos = new THREE.WebGLRenderTarget(width, height, {
                             wrapS: THREE.RepeatWrapping,
                             wrapT: THREE.RepeatWrapping,
@@ -609,9 +540,7 @@ s
                             type: THREE.FloatType,
                             stencilBuffer: false
                         });
-
                         rtTexturePos2 = rtTexturePos.clone();
-
                         simulationShader = new THREE.ShaderMaterial({
                             uniforms: {
                                 tPositions: {type: "t", value: texture},
@@ -620,27 +549,18 @@ s
                             },
                             vertexShader: document.getElementById('texture_vertex_simulation_shader').textContent,
                             fragmentShader: document.getElementById('texture_fragment_simulation_shader').textContent
-
                         });
-
                         fboParticles = new THREE.FBOUtils(width, renderer, simulationShader);
                         fboParticles.renderToTexture(rtTexturePos, rtTexturePos2);
-
                         fboParticles.in = rtTexturePos;
                         fboParticles.out = rtTexturePos2;
-
-
                         geometry = new THREE.Geometry();
-
                         for (var i = 0, l = width * height; i < l; i++) {
-
                             var vertex = new THREE.Vector3();
                             vertex.x = (i % width) / width;
                             vertex.y = Math.floor(i / width) / height;
                             geometry.vertices.push(vertex);
-
                         }
-
                         material = new THREE.ShaderMaterial({
                             uniforms: {
                                 "map": {type: "t", value: rtTexturePos},
@@ -648,7 +568,6 @@ s
                                 "height": {type: "f", value: height},
                                 "pointColor": {type: "v4", value: new THREE.Vector4(0, 0.24, 0.2, 0.07)},
                                 "pointSize": {type: "f", value: 1}
-
                             },
                             vertexShader: document.getElementById('vs-particles').textContent,
                             fragmentShader: document.getElementById('fs-particles').textContent,
@@ -656,50 +575,32 @@ s
                             depthWrite: false,
                             depthTest: false,
                             transparent: true
-
                         });
-
                         mesh = new THREE.ParticleSystem(geometry, material);
                         scene.add(mesh);
-
                         scene.add(new THREE.Mesh(new THREE.CubeGeometry(500, 500, 500), new THREE.MeshBasicMaterial({color: 0xffffff, wireframe: true, opacity: 0, transparent: true})));
-
                     }
-
                     function animate() {
-
                         requestAnimationFrame(animate);
                         render();
-
                     }
-
                     var timer = 0;
-
                     function render() {
-
                         timer += 0.005;
-
                         simulationShader.uniforms.timer.value = timer;
                         simulationShader.uniforms.origin.value.x = Math.sin(timer * 2.3) * 0.5 + 0.5;
                         simulationShader.uniforms.origin.value.y = Math.cos(timer * 2.5) * 0.5 + 0.5;
                         simulationShader.uniforms.origin.value.z = Math.sin(timer * 2.7) * 0.5 + 0.5;
-
                         // swap
                         var tmp = fboParticles.in;
                         fboParticles.in = fboParticles.out;
                         fboParticles.out = tmp;
-
                         simulationShader.uniforms.tPositions.value = fboParticles.in;
                         fboParticles.simulate(fboParticles.out);
                         material.uniforms.map.value = fboParticles.out;
-
                         controls.update();
-
                         renderer.render(scene, camera);
-
                     }
-
-
         </script>
         <!-- window scroll -->
         <script>
@@ -713,15 +614,11 @@ s
             $(".masthead a, a.btn").click(function (event) {
                 event.preventDefault();
                 $('html,body').animate({scrollTop: $(this.hash).offset().top - 50}, 500);
-
-
             });
             $().ready(function () {
                 $('#home').find('.cover-hello, .cover-heading, .cover-designation, .cover-button').addClass('animated bounceInUp');
                 $('#home').find('.social a').addClass('animated zoomIn');
                 $('#home').find('.cover-wrapper-inner, .cover-button').removeClass('transparent');
-
-
                 $container = $('.works_list ul');
                 $container.isotope({
                     onLayout: function () {
@@ -745,32 +642,26 @@ s
                         filter: n
                     })
                 })
-
                 if (isMobile) {
                     $(".item").click(function () {
                         toggleDetail(this);
-
                     });
                 } else {
                     $(".item").hover(function () {
                         toggleDetail(this);
-
                     });
                 }
-
                 widthcalc();
                 $(window).resize(function () {
                     widthcalc();
                     $.waypoints('refresh');
                 });
-
                 $(".cover-designation span").typed({
                     strings: ["a Web applications Developer", "a Web Developer", "a Passionate Web Developer"],
                     typeSpeed: 30,
                     startDelay: 1000,
                 });
             });
-
             $('#home, #about, #works, #contact').waypoint(function () {
                 activenav($(this));
             }, {offset: function () {
@@ -779,14 +670,12 @@ s
             $('#home, #about, #works, #contact').waypoint(function () {
                 activenav($(this));
             }, {offset: '51px'});
-
             $('#works').waypoint(function () {
                 $(this).find('.section-title, #filters').addClass('animated fadeInUp');
                 $(this).find('.item').addClass('animated zoomIn');
             }, {offset: function () {
                     return $(window).height() - 2;
                 }});
-
             $('#about').waypoint(function () {
                 $(this).find(' .section-title, .desc ').addClass('animated fadeInUp');
                 $(this).find('.btn').addClass('animated zoomIn');
@@ -809,16 +698,13 @@ s
             }, {offset: function () {
                     return $(window).height() + 100;
                 }});
-
             $('#contact').waypoint(function () {
                 $(this).find(' .section-title, .desc ').addClass('animated fadeInUp');
                 $(this).find('.social a').addClass('animated zoomIn');
             }, {offset: function () {
                     return $(window).height() - 2;
                 }});
-
             function toggleDetail(ele) {
-
                 $(ele).children(".work_details").toggleClass("auto_height");
                 $(ele).siblings('.item').children(".work_details").removeClass("auto_height");
                 $container.isotope('reLayout');
@@ -831,7 +717,6 @@ s
             }
             function widthcalc() {
                 var wrapwidth = $container.width()
-
                 if (wrapwidth / 4 >= 250) {
                     worksisotope(wrapwidth / 4);
                 } else if (wrapwidth / 3 >= 250) {
@@ -852,7 +737,6 @@ s
                         masonry: {columnWidth: Math.floor(iwidth)},
                     });
                 });
-
             }
             $(".fancybox").fancybox({
                 padding: 0,
@@ -867,7 +751,6 @@ s
                 }
             });
             cover - designation
-
         </script>
 
     </body>
