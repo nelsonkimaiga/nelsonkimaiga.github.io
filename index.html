@@ -1,362 +1,367 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
-    <head>
-        <title>Nelson Kimaiga</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Full Stack Software developer based in Nairobi, Kenya."/>
-        <meta name="keywords" content="Software Engineer, Software Development, Agile Development">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <!--foundation-->
-        <link rel="stylesheet" type="text/css" href="css/foundation.css">
-        <link rel="stylesheet" type="text/css" href="css/app.css">
-        <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
-        <!--animate box css-->
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
-        <!-- Fancy box CSS -->
-        <link href="css/jquery.fancybox.css" rel="stylesheet">        
-        <!--fonts-->
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <!--font-awsome-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet"  type="text/css">
-        <!--foundation icons-->
-        <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel="stylesheet" type="text/css">
-        <!--form validation-->
-        <script type="text/javascript">
-            function validateForm() {
-                var x = document.forms["contactForm"]["name"].value;
-                var y = document.forms["contactForm"]["phone"].value;
-                var z = document.forms["contactForm"]["email"].value;
-                var m = document.forms["contactForm"]["message"].value;
-                if (x == null || x == "") {
-                    alert("Name must be filled out");
-                    return false;
-                }
-                if (y == null || y == "" || (y.value < 10) || (isNaN(y.value))) {
-                    alert("number must be filled out");
-                    return false;
-                }
-                if (z == null || z == "") {
-                    alert("email must be filled out");
-                    return false;
-                }
-                if (m == null || m == "") {
-                    alert("message must be filled out");
-                    return false;
-                }
-                return true;
+
+<head>
+    <title>Nelson Kimaiga</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Software developer based in Nairobi, Kenya." />
+    <meta name="keywords" content="Software Engineer, Software Development, Agile Development">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--foundation-->
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
+    <!--animate box css-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Fancy box CSS -->
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!--font-awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css">
+    <!--foundation icons-->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel="stylesheet" type="text/css">
+    <!--form validation-->
+    <script type="text/javascript">
+        function validateForm() {
+            var x = document.forms["contactForm"]["name"].value;
+            var y = document.forms["contactForm"]["phone"].value;
+            var z = document.forms["contactForm"]["email"].value;
+            var m = document.forms["contactForm"]["message"].value;
+            if (x == null || x == "") {
+                alert("Name must be filled out");
+                return false;
             }
-        </script>
-    </head>
-    <body>
-        <div class="masthead clearfix small-12 medium-12 columns">
-            <div class="container-fluid">
-                <h3 class="masthead-brand"><a href="#home"><img src="img/Sartorial.jpg" class="image-logo" alt="Nelson Kimaiga"></a></h3>
-                <nav>
-                    <ul class="nav masthead-nav">
-                        <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#works">My Portfolio</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="https://rhapsody.azurewebsites.net/" id="blog" rel="external" target="_blank">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            if (y == null || y == "" || (y.value < 10) || (isNaN(y.value))) {
+                alert("number must be filled out");
+                return false;
+            }
+            if (z == null || z == "") {
+                alert("email must be filled out");
+                return false;
+            }
+            if (m == null || m == "") {
+                alert("message must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="masthead clearfix small-12 medium-12 columns">
+        <div class="container-fluid">
+            <h3 class="masthead-brand">
+                <a href="#home"><img src="img/Sartorial.jpg" class="image-logo" alt="Nelson Kimaiga"></a>
+            </h3>
+            <nav>
+                <ul class="nav masthead-nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#works">My Portfolio</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="https://rhapsody.azurewebsites.net/" id="blog" rel="external" target="_blank">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="cover-container" id="home">
-            <div id="canvasAnimation"></div>
-            <div class="cover-wrapper">
-                <div class="cover-wrapper-inner transparent">
-                    <div class="container-fluid cover ">
-                        <p class="cover-hello ">Hello, I'm</p>
-                        <h1 class="cover-heading delay-02">Nelson Kimaiga</h1>
-                        <h2 class="cover-designation delay-04"><span></span></h2>
-                        <div class="social blue">
-                            <span class="icons"><a title="Linkedln" href="https://www.linkedin.com/in/nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-linkedin"></i></a></span>
-                            <span class="icons"><a title="GitHub" href="https://www.github.com/nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-github-alt"></i></a></span>
-                            <span class="icons"><a title="Twitter" href="https://www.twitter.com/Nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a></span>
-                        </div>
+    </div>
+    <div class="cover-container" id="home">
+        <div id="canvasAnimation"></div>
+        <div class="cover-wrapper">
+            <div class="cover-wrapper-inner transparent">
+                <div class="container-fluid cover ">
+                    <p class="cover-hello ">Hello, I'm</p>
+                    <h1 class="cover-heading delay-02">Nelson Kimaiga</h1>
+                    <h2 class="cover-designation delay-04"><span></span></h2>
+                    <div class="social blue">
+                        <span class="icons"><a title="Linkedln" href="https://www.linkedin.com/in/nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+                        <span class="icons"><a title="GitHub" href="https://www.github.com/nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-github-alt"></i></a></span>
+                        <span class="icons"><a title="Twitter" href="https://www.twitter.com/Nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a></span>
                     </div>
-
                 </div>
-            </div>
-            <div class="cover-button delay-08 transparent">
-                <div><a href="#works" class="button primary">See My Portfolio</a></div>
-                <!-- <a class="contact button" href="#" target="cv">Curriculum Vitae:</a> -->
-                <span class="glyphicon glyphicon-menu-down text-primary animated infinite fadeIn "></span>
+
             </div>
         </div>
+        <div class="cover-button delay-08 transparent">
+            <div><a href="#works" class="button primary">See My Portfolio</a></div>
+            <!-- <a class="contact button" href="#" target="cv">Curriculum Vitae:</a> -->
+            <span class="glyphicon glyphicon-menu-down text-primary animated infinite fadeIn "></span>
+        </div>
+    </div>
 
-         <div class="works-container" id="works">
-            <div class="container">
-                <h3 class="section-title text-primary ">My Portfolio</h3>
-                <div id="filters" class="button-group delay-02"></div>
-                <div class="works_list delay-04">
-                    <ul class="isotope">
-                        <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/lxg.PNG" alt="LXG Group">
-                            <div  class="work_details">
-                                <h4>LXG Group</h4>
-                                <p>Web development</p>
-                                <div class="detail_foot">
-                                    <a href="http://lxg-group.com" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
-                            </div>
+    <div class="works-container" id="works">
+        <div class="container">
+            <h3 class="section-title text-primary ">My Portfolio</h3>
+            <div id="filters" class="button-group delay-02"></div>
+            <div class="works_list delay-04">
+                <ul class="isotope">
+                    <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/lxg.PNG" alt="LXG Group">
+                        <div class="work_details">
+                            <h4>LXG Group</h4>
+                            <p>Web development</p>
+                            <div class="detail_foot">
+                                <a href="http://lxg-group.com" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
+                        </div>
                         <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/d3.png" alt="D3 Playground">
-                            <div  class="work_details">
+                            <div class="work_details">
                                 <h4>D3 PlayGround</h4>
                                 <p>Web development</p>
                                 <div class="detail_foot">
                                     <a href="http://nelsonkimaiga.github.io/D3Graphs/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
                             </div>
-                        <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/aasopen.png" alt="AAS Open">
-                            <div  class="work_details">
-                                <h4>AAS Open Research</h4>
-                                <p>Back-end web development</p>
-                                <div class="detail_foot">
-                                    <a href="https://aasopenresearch.org/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
-                            </div>
-                        <!-- <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/grand-challenges.PNG" alt="Grand Challenges">
+                            <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/aasopen.png" alt="AAS Open">
+                                <div class="work_details">
+                                    <h4>AAS Open Research</h4>
+                                    <p>Back-end web development</p>
+                                    <div class="detail_foot">
+                                        <a href="https://aasopenresearch.org/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
+                                </div>
+                                <!-- <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/grand-challenges.PNG" alt="Grand Challenges">
                             <div  class="work_details">
                                 <h4>Grand Challenges</h4>
                                 <p>Back-end web development</p>
                                 <div class="detail_foot">
                                     <a href="https://repository.grandchallenges.org/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
                             </div> -->
-                        <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/aascienc.png" alt="Grand Challenges">
-                            <div  class="work_details">
-                                <h4>Afrian Academy of Sciences</h4>
-                                <p>Back-end web development</p>
-                                <div class="detail_foot">
-                                    <a href="https://aasciences.ac.ke" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
-                            </div>    
-                        <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/logo-dark.png" alt="Moringa School">
-                            <div  class="work_details">
-                                <h4>Moringa School</h4>
-                                <p>Front-end web development</p>
-                                <div class="detail_foot">
-                                    <a href="http://moringaschool.com/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
-                            </div>
-                            <!--placeholder-->
-                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/sironka.png" alt="Sironka" height="7">
-                            <div  class="work_details">
-                                <h4>Sironka</h4>
-                                <p>Back-End web development</p>
-                                <div class="detail_foot">
-                                    <a href="https://stark-tor-2363.herokuapp.com " target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
-                                </div>
-                            </div>  
-s
-                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="http://petermuturi.xyz/assets/portfolio/nairobi.png" alt="Nairobi Tech Week">
-                            <div  class="work_details">
-                                <h4>Nairobi Tech Week</h4>
-                                <p>Front-End website development</p>
-                                <div class="detail_foot">
-                                    <a href="http://nairobitechweek.com/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
-                                </div>
-                            </div>
-                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/aesa.png" alt="AESA">
-                            <div  class="work_details">
-                                <h4>AESA</h4>
-                                <p>Front-End website development</p>
-                                <div class="detail_foot">
-                                    <a href="http://aesa.ac.ke" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
-                                </div>
-                            </div>
-                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/oliza.png" alt="Oliza" height="7">
-                            <div  class="work_details">
-                                <h4>Oliza Kenya</h4>
-                                <p>Front-End website development</p>
-                                <div class="detail_foot">
-                                    <a href="http://oliza.co.ke/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
-                                </div>
-                            </div>
-                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="https://bit.ly/2k0rOEW" alt="Ocharge" height="7">
-                            <div  class="work_details">
-                                <h4>Ocharge Kenya</h4>
-                                <p>Front-End website development</p>
-                                <div class="detail_foot">
-                                    <a href="https://www.ocharge.co.ke/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
-                                </div>
-                            </div>
-                        
-                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/paintapp.png" alt="Calcujs" height="7">
-                            <div  class="work_details">
-                                <h4>Let's Paint</h4>
-                                <p>Front-End web JavaScript development</p>
-                                <div class="detail_foot">
-                                    <a href="http://paintapp.azurewebsites.net/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
-                                </div>
-                            </div>           
-                       <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/chatapp.png" alt="Calcujs" height="7">
-                            <div  class="work_details">
-                                <h4>ChatterBox</h4>
-                                <p>Front-End web development</p>
-                                <div class="detail_foot">
-                                    <a href="https://chattingapp.bitballoon.com" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
-                                </div>
-                            </div>   
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
+                                <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/aascienc.png" alt="Grand Challenges">
+                                    <div class="work_details">
+                                        <h4>Afrian Academy of Sciences</h4>
+                                        <p>Back-end web development</p>
+                                        <div class="detail_foot">
+                                            <a href="https://aasciences.ac.ke" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
+                                    </div>
+                                    <li class="item element-item websitework delay-04" data-category="websitework"><img src="img/logo-dark.png" alt="Moringa School">
+                                        <div class="work_details">
+                                            <h4>Moringa School</h4>
+                                            <p>Front-end web development</p>
+                                            <div class="detail_foot">
+                                                <a href="http://moringaschool.com/" rel='nofollow' target="_blank"><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a></div>
+                                        </div>
+                                        <!--placeholder-->
+                                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/sironka.png" alt="Sironka" height="7">
+                                            <div class="work_details">
+                                                <h4>Sironka</h4>
+                                                <p>Back-End web development</p>
+                                                <div class="detail_foot">
+                                                    <a href="https://stark-tor-2363.herokuapp.com " target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                                </div>
+                                            </div>
+                                            s
+                                            <li class="item element-item websitework delay-06" data-category="websitework"><img src="http://petermuturi.xyz/assets/portfolio/nairobi.png" alt="Nairobi Tech Week">
+                                                <div class="work_details">
+                                                    <h4>Nairobi Tech Week</h4>
+                                                    <p>Front-End website development</p>
+                                                    <div class="detail_foot">
+                                                        <a href="http://nairobitechweek.com/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                                    </div>
+                                                </div>
+                                                <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/aesa.png" alt="AESA">
+                                                    <div class="work_details">
+                                                        <h4>AESA</h4>
+                                                        <p>Front-End website development</p>
+                                                        <div class="detail_foot">
+                                                            <a href="http://aesa.ac.ke" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/oliza.png" alt="Oliza" height="7">
+                                                        <div class="work_details">
+                                                            <h4>Oliza Kenya</h4>
+                                                            <p>Front-End website development</p>
+                                                            <div class="detail_foot">
+                                                                <a href="http://oliza.co.ke/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <li class="item element-item websitework delay-06" data-category="websitework"><img src="https://bit.ly/2k0rOEW" alt="Ocharge" height="7">
+                                                            <div class="work_details">
+                                                                <h4>Ocharge Kenya</h4>
+                                                                <p>Front-End website development</p>
+                                                                <div class="detail_foot">
+                                                                    <a href="https://www.ocharge.co.ke/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                                                </div>
+                                                            </div>
 
-        <div class="about-container" id="about">
-            <div class="banner">
-                <div class="container">
-                    <h3 class="section-title text-primary delay-02">About Me</h3>
-                    <p class="desc delay-04">I’m a cross-platform Software Developer based in Nairobi, Kenya, using the most sought after technologies to come up<br> with solutions in Web and Mobile Development, as well as embracing version control and contribution to other software developers' work through using <a href="http://github.com/nelsonkimaiga">GitHub</a>
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-container">
-                <div>
-                    <a href="#" class="button large success delay-06">Skills &amp; Competencies</a>
-                </div>
-                <div class="timeline animated">
-                    <div class="timeline-row">
-                        <div class="timeline-time">
-                            <small></small>Mobile Development
-                        </div>
-                        <div class="timeline-icon">
-                            <div class="bg-kno">
-                                <span class="dev-icons"><i class="fab fa-android"></i></span>
-                            </div>
-                        </div>
-                        <div class="panel timeline-content">
-                            <div class="panel-body">
-                                <p>
-                                    <b>Java</b> 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-row">
-                        <div class="timeline-time">
-                            <small></small>Front-End Web Development
-                        </div>
-                        <div class="timeline-icon">
-                            <div class="bg-kno">
-                                <span class="dev-icons"><i class="fab fa-html5"></i></span>
-                            </div>
-                        </div>
-                        <div class="panel timeline-content">
-                            <div class="panel-body">
-                                <p>
-                                    <b>HTML5</b>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-row">
-                        <div class="timeline-time">
-                            <small></small>Front-End Web Development
-                        </div>
-                        <div class="timeline-icon">
-                            <div class="bg-kno">
-                                <span class="dev-icons"><i class="fab fa-css3-alt"></i></span>
-                            </div>
-                        </div>
-                        <div class="panel timeline-content">
-                            <div class="panel-body">
-                                <p>
-                                    <b>CSS3</b>
-                                </p>
-                            </div>
-                        </div>
-                    </div>            
-                    <div class="timeline-row">
-                        <div class="timeline-time">
-                            <small></small>Back-End Web Development
-                        </div>
-                        <div class="timeline-icon">
-                            <div class="bg-kno">
-                                <span class="dev-icons"><i class="fab fa-python"></i></span>
-                            </div>
-                        </div>
-                        <div class="panel timeline-content">
-                            <div class="panel-body">
-                                <p>
-                                    <b>Python</b> 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-row">
-                        <div class="timeline-time">
-                            <small></small>Back-end Development
-                        </div>
-                        <div class="timeline-icon">
-                            <div class="bg-exp">
-                                <span class="dev-icons"><i class="fab fa-java"></i></span>
-                            </div>
-                        </div>
-                        <div class="panel timeline-content">
-                            <div class="panel-body">
-                                <p>
-                                    <b>J2EE - Spring Boot</b>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-row">
-                        <div class="timeline-time">
-                            <small></small>Relational Databases
-                        </div>
-                        <div class="timeline-icon">
-                            <div class="bg-kno">
-                                <span class="dev-icons"><i class="fa fa-database"></i></span>
-                            </div>
-                        </div>
-                        <div class="panel timeline-content">
-                            <div class="panel-body">
-                                <p>
-                                    <b>Hibernate, MySQL</b> 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-row">
-                        <div class="timeline-time">
-                            <small></small>Version Control
-                        </div>
-                        <div class="timeline-icon">
-                            <div class="bg-kno">
-                                <span class="dev-icons"><i class="fas fa-code-branch"></i></span>
-                            </div>
-                        </div>
-                        <div class="panel timeline-content">
-                            <div class="panel-body">
-                                <p>
-                                    <b>Git</b> 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <a href="#" class="button button-group success secondary delay-06">exploration continues...</a>
-                </div>
+                                                            <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/paintapp.png" alt="Calcujs" height="7">
+                                                                <div class="work_details">
+                                                                    <h4>Let's Paint</h4>
+                                                                    <p>Front-End web JavaScript development</p>
+                                                                    <div class="detail_foot">
+                                                                        <a href="http://paintapp.azurewebsites.net/" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <li class="item element-item websitework delay-06" data-category="websitework"><img src="img/chatapp.png" alt="Calcujs" height="7">
+                                                                    <div class="work_details">
+                                                                        <h4>ChatterBox</h4>
+                                                                        <p>Front-End web development</p>
+                                                                        <div class="detail_foot">
+                                                                            <a href="https://chattingapp.bitballoon.com" target="_blank" rel='nofollow'><i class="fa fa-hand-o-up"><span class="glyphicon glyphicon-new-window"></span></i></a>
+                                                                        </div>
+                                                                    </div>
+                </ul>
+                <div class="clearfix"></div>
             </div>
         </div>
-        <div class="contact-container" id="contact">
+    </div>
+
+    <div class="about-container" id="about">
+        <div class="banner">
             <div class="container">
-                <div class="contact-wrapper">
-                    <div class="contact-wrapper-inner">
-                        <h3 class="section-title text-primary">Let's keep in touch</h3>
-                        <p class="desc delay-02">
-                            <br>Nairobi, Kenya </br>
-                            <br>Mobile: 0721496346</br>
-                        </p>
-                        <p class="desc delay-02"><b>I am social</p>                           
-                        </b>                            
+                <h3 class="section-title text-primary delay-02">About Me</h3>
+                <p class="desc delay-04">I’m a cross-platform Software Developer based in Nairobi, Kenya, using the most sought after technologies to come up<br> with solutions in Web and Mobile Development, as well as embracing version control and contribution to other software
+                    developers' work through using <a href="http://github.com/nelsonkimaiga">GitHub</a>
+                </p>
+            </div>
+        </div>
+        <div class="timeline-container">
+            <div>
+                <a href="#" class="button large success delay-06">Skills &amp; Competencies</a>
+            </div>
+            <div class="timeline animated">
+                <div class="timeline-row">
+                    <div class="timeline-time">
+                        <small></small>Mobile Development
+                    </div>
+                    <div class="timeline-icon">
+                        <div class="bg-kno">
+                            <span class="dev-icons"><i class="fab fa-android"></i></span>
+                        </div>
+                    </div>
+                    <div class="panel timeline-content">
+                        <div class="panel-body">
+                            <p>
+                                <b>Java</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-time">
+                        <small></small>Front-End Web Development
+                    </div>
+                    <div class="timeline-icon">
+                        <div class="bg-kno">
+                            <span class="dev-icons"><i class="fab fa-html5"></i></span>
+                        </div>
+                    </div>
+                    <div class="panel timeline-content">
+                        <div class="panel-body">
+                            <p>
+                                <b>HTML5</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-time">
+                        <small></small>Front-End Web Development
+                    </div>
+                    <div class="timeline-icon">
+                        <div class="bg-kno">
+                            <span class="dev-icons"><i class="fab fa-css3-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="panel timeline-content">
+                        <div class="panel-body">
+                            <p>
+                                <b>CSS3</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-time">
+                        <small></small>Back-End Web Development
+                    </div>
+                    <div class="timeline-icon">
+                        <div class="bg-kno">
+                            <span class="dev-icons"><i class="fab fa-python"></i></span>
+                        </div>
+                    </div>
+                    <div class="panel timeline-content">
+                        <div class="panel-body">
+                            <p>
+                                <b>Python</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-time">
+                        <small></small>Back-end Development
+                    </div>
+                    <div class="timeline-icon">
+                        <div class="bg-exp">
+                            <span class="dev-icons"><i class="fab fa-java"></i></span>
+                        </div>
+                    </div>
+                    <div class="panel timeline-content">
+                        <div class="panel-body">
+                            <p>
+                                <b>J2EE - Spring Boot</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-time">
+                        <small></small>Relational Databases
+                    </div>
+                    <div class="timeline-icon">
+                        <div class="bg-kno">
+                            <span class="dev-icons"><i class="fa fa-database"></i></span>
+                        </div>
+                    </div>
+                    <div class="panel timeline-content">
+                        <div class="panel-body">
+                            <p>
+                                <b>Hibernate, MySQL</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-time">
+                        <small></small>Version Control
+                    </div>
+                    <div class="timeline-icon">
+                        <div class="bg-kno">
+                            <span class="dev-icons"><i class="fas fa-code-branch"></i></span>
+                        </div>
+                    </div>
+                    <div class="panel timeline-content">
+                        <div class="panel-body">
+                            <p>
+                                <b>Git</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="button button-group success secondary delay-06">exploration continues...</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-wrapper-inner">
+                    <h3 class="section-title text-primary">Let's keep in touch</h3>
+                    <p class="desc delay-02">
+                        <br>Nairobi, Kenya </br>
+                        <br>Mobile: 0721496346</br>
+                    </p>
+                    <p class="desc delay-02"><b>I am social</p>                           
+                        </b>
                         <div class="social gray">
                             <span class="icons"><a title="Linkedln" href="https://www.linkedin.com/in/nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-linkedin"></i></a></span>
                             <span class="icons"><a title="GitHub" href="https://www.github.com/nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-github-alt"></i></a></span>
                             <span class="icons"><a title="Twitter" href="https://www.twitter.com/Nelsonkimaiga" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a></span>
                         </div>
                         <div class="contact-form">
-                            <form  action="http://formspree.io/nelsonkimaiga@aol.com" method="POST" onsubmit="return validateForm()" name="contactForm">
+                            <form action="http://formspree.io/nelsonkimaiga@aol.com" method="POST" onsubmit="return validateForm()" name="contactForm">
                                 <div class="small-12 medium-12 large-12 columns">
                                     <fieldset>
                                         <label>Full Names</label>
@@ -387,364 +392,377 @@ s
                                 <button type="submit" value="SEND" class="button large secondary">Talk To Me</button>
                             </form>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- my map -->
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.10463665023!2d36.7146349!3d-1.3095979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8c600ff006c6e0e!2sAfrican+Academy+of+Sciences!5e0!3m2!1sen!2s!4v1477640800003" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+    </div>
+    <!-- my map -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.24810578505!2d36.806817!3d-1.2868639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x617f7197c53b96b!2sLiaison%20Group!5e0!3m2!1sen!2ske!4v1593073661844!5m2!1sen!2ske" width="800" height="600"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
 
-        <!--footer-->
-        <div class="footer">
-            <div class="copy">
-                <div class="container">
-                    <p>All Rights Reserved |<a href="http://nelsonkimaiga.azurewebsites.net">Nelson Kimaiga</a></p>
-                </div>
-                <!-- curent date and year to appear on footer-->
-                &copy; Nelson Kimaiga.
-                <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                </script>
+    <!--footer-->
+    <div class="footer">
+        <div class="copy">
+            <div class="container">
+                <p>All Rights Reserved |<a href="http://nelsonkimaiga.azurewebsites.net">Nelson Kimaiga</a></p>
             </div>
-            <a href="#home" id="toTop" style="display: block;"><span id="toTopHover"></span><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+            <!-- curent date and year to appear on footer-->
+            &copy; Nelson Kimaiga.
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
         </div>
+        <a href="#home" id="toTop" style="display: block;"><span id="toTopHover"></span><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/foundation.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/vendor/jquery.min.js"></script>
-        <script src="js/waypoint.js"></script>
-        <script src="js/mobile-detect.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
-        <script type="text/javascript" src="js/jquery.isotope.min.js"></script> 
-        <script type="text/javascript" src="js/isotope.pkgd.js"></script> 
-        <script src="js/three.js"></script>
-        <script src="js/FBOUtils.js"></script>
-        <script src="js/typed.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/waypoint.js"></script>
+    <script src="js/mobile-detect.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/FBOUtils.js"></script>
+    <script src="js/typed.min.js"></script>
 
-        <!--javascript code-->
-        <script id="texture_vertex_simulation_shader" type="x-shader/x-vertex">
-            varying vec2 vUv;
-            void main() {
-            vUv = vec2(uv.x, 1.0 - uv.y);
-            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
-            }
-        </script>
-        <script id="texture_fragment_simulation_shader" type="x-shader/x-fragment">
-            // simulation
-            varying vec2 vUv;
-            uniform vec3 origin;
-            uniform sampler2D tPositions;
-            uniform float timer;
-            float rand(vec2 co){
-            return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
-            }
-            void main() {
-            vec3 pos = texture2D( tPositions, vUv ).xyz;
-            if ( rand( vUv + timer ) > 0.99 ) {
-            pos = origin;
-            vec3 random = vec3( rand( vUv + 1.0 ) - 1.0, rand( vUv + 2.0 ) - 1.0, rand( vUv + 3.0 ) - 1.0 );
-            pos += normalize( random ) * rand( vUv + 1.0 );
-            } else {
-            float x = pos.x + timer;
-            float y = pos.y;
-            float z = pos.z;
-            pos.x += sin( y * 3.3 ) * cos( z * 10.3 ) * 0.005;
-            pos.y += sin( x * 3.5 ) * cos( z * 10.5 ) * 0.005;
-            pos.z += sin( x * 3.7 ) * cos( y * 10.7 ) * 0.005;
-            }
-            // Write new position out
-            gl_FragColor = vec4(pos, 1.0);
-            }
-        </script>
+    <!--javascript code-->
+    <script id="texture_vertex_simulation_shader" type="x-shader/x-vertex">
+        varying vec2 vUv; void main() { vUv = vec2(uv.x, 1.0 - uv.y); gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 ); }
+    </script>
+    <script id="texture_fragment_simulation_shader" type="x-shader/x-fragment">
+        // simulation varying vec2 vUv; uniform vec3 origin; uniform sampler2D tPositions; uniform float timer; float rand(vec2 co){ return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453); } void main() { vec3 pos = texture2D( tPositions, vUv ).xyz;
+        if ( rand( vUv + timer ) > 0.99 ) { pos = origin; vec3 random = vec3( rand( vUv + 1.0 ) - 1.0, rand( vUv + 2.0 ) - 1.0, rand( vUv + 3.0 ) - 1.0 ); pos += normalize( random ) * rand( vUv + 1.0 ); } else { float x = pos.x + timer; float y = pos.y;
+        float z = pos.z; pos.x += sin( y * 3.3 ) * cos( z * 10.3 ) * 0.005; pos.y += sin( x * 3.5 ) * cos( z * 10.5 ) * 0.005; pos.z += sin( x * 3.7 ) * cos( y * 10.7 ) * 0.005; } // Write new position out gl_FragColor = vec4(pos, 1.0); }
+    </script>
 
-        <script id="vs-particles" type="x-shader/x-vertex">
-            uniform sampler2D map;
-            uniform float width;
-            uniform float height;
-            uniform float pointSize;
-            varying vec2 vUv;
-            varying vec4 vPosition;
-            varying vec4 vColor;
-            void main() {
-            vec2 uv = position.xy + vec2( 0.5 / width, 0.5 / height );
-            vec3 color = texture2D( map, uv ).rgb * 200.0 - 100.0;
-            gl_PointSize = pointSize;
-            gl_Position = projectionMatrix * modelViewMatrix * vec4( color, 1.0 );
-            }
-        </script>
+    <script id="vs-particles" type="x-shader/x-vertex">
+        uniform sampler2D map; uniform float width; uniform float height; uniform float pointSize; varying vec2 vUv; varying vec4 vPosition; varying vec4 vColor; void main() { vec2 uv = position.xy + vec2( 0.5 / width, 0.5 / height ); vec3 color = texture2D(
+        map, uv ).rgb * 200.0 - 100.0; gl_PointSize = pointSize; gl_Position = projectionMatrix * modelViewMatrix * vec4( color, 1.0 ); }
+    </script>
 
-        <script id="fs-particles" type="x-shader/x-fragment">
-            uniform vec4 pointColor;
-            void main() {
-            gl_FragColor = pointColor;
-            }
-        </script>
+    <script id="fs-particles" type="x-shader/x-fragment">
+        uniform vec4 pointColor; void main() { gl_FragColor = pointColor; }
+    </script>
 
-        <script>
-                    var container;
-                    var scene, camera, light, renderer;
-                    var geometry, cube, mesh, material;
-                    var data, texture, points;
-                    var controls;
-                    var fboParticles, rtTexturePos, rtTexturePos2, simulationShader;
-                    var planeMat, planeGeo, plane;
-                    var isMobile = $.browser.mobile;
-                    if (!isMobile) {
-                        init();
-                        animate();
-                    } else {
-                        $('#home').addClass('static-bg');
-                    }
-                    function init() {
-                        container = document.createElement('div');
-                        document.body.appendChild(container);
-                        $('#canvasAnimation').append(container);
-                        renderer = new THREE.WebGLRenderer();
-                        renderer.setSize(window.innerWidth, window.innerHeight);
-                        container.appendChild(renderer.domElement);
-                        scene = new THREE.Scene();
-                        camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000);
-                        scene.add(camera);
-                        controls = new THREE.OrbitControls2(camera);
-                        controls.radius = 400;
-                        controls.speed = 2;
-                        //
-                        var width = 900, height = 900;
-                        if (!renderer.context.getExtension('OES_texture_float')) {
-                            console.log('OES_texture_float is not :(');
-                        }
-                        // Start Creation of DataTexture
-                        // Could it be simplified with THREE.FBOUtils.createTextureFromData(textureWidth, textureWidth, data); ?
-                        data = new Float32Array(width * height * 3);
-                        texture = new THREE.DataTexture(data, width, height, THREE.RGBFormat, THREE.FloatType);
-                        texture.minFilter = THREE.NearestFilter;
-                        texture.magFilter = THREE.NearestFilter;
-                        texture.needsUpdate = true;
-                        // zz85 - fbo init
-                        rtTexturePos = new THREE.WebGLRenderTarget(width, height, {
-                            wrapS: THREE.RepeatWrapping,
-                            wrapT: THREE.RepeatWrapping,
-                            minFilter: THREE.NearestFilter,
-                            magFilter: THREE.NearestFilter,
-                            format: THREE.RGBFormat,
-                            type: THREE.FloatType,
-                            stencilBuffer: false
-                        });
-                        rtTexturePos2 = rtTexturePos.clone();
-                        simulationShader = new THREE.ShaderMaterial({
-                            uniforms: {
-                                tPositions: {type: "t", value: texture},
-                                origin: {type: "v3", value: new THREE.Vector3()},
-                                timer: {type: "f", value: 0}
-                            },
-                            vertexShader: document.getElementById('texture_vertex_simulation_shader').textContent,
-                            fragmentShader: document.getElementById('texture_fragment_simulation_shader').textContent
-                        });
-                        fboParticles = new THREE.FBOUtils(width, renderer, simulationShader);
-                        fboParticles.renderToTexture(rtTexturePos, rtTexturePos2);
-                        fboParticles.in = rtTexturePos;
-                        fboParticles.out = rtTexturePos2;
-                        geometry = new THREE.Geometry();
-                        for (var i = 0, l = width * height; i < l; i++) {
-                            var vertex = new THREE.Vector3();
-                            vertex.x = (i % width) / width;
-                            vertex.y = Math.floor(i / width) / height;
-                            geometry.vertices.push(vertex);
-                        }
-                        material = new THREE.ShaderMaterial({
-                            uniforms: {
-                                "map": {type: "t", value: rtTexturePos},
-                                "width": {type: "f", value: width},
-                                "height": {type: "f", value: height},
-                                "pointColor": {type: "v4", value: new THREE.Vector4(0, 0.24, 0.2, 0.07)},
-                                "pointSize": {type: "f", value: 1}
-                            },
-                            vertexShader: document.getElementById('vs-particles').textContent,
-                            fragmentShader: document.getElementById('fs-particles').textContent,
-                            blending: THREE.AdditiveBlending,
-                            depthWrite: false,
-                            depthTest: false,
-                            transparent: true
-                        });
-                        mesh = new THREE.ParticleSystem(geometry, material);
-                        scene.add(mesh);
-                        scene.add(new THREE.Mesh(new THREE.CubeGeometry(500, 500, 500), new THREE.MeshBasicMaterial({color: 0xffffff, wireframe: true, opacity: 0, transparent: true})));
-                    }
-                    function animate() {
-                        requestAnimationFrame(animate);
-                        render();
-                    }
-                    var timer = 0;
-                    function render() {
-                        timer += 0.005;
-                        simulationShader.uniforms.timer.value = timer;
-                        simulationShader.uniforms.origin.value.x = Math.sin(timer * 2.3) * 0.5 + 0.5;
-                        simulationShader.uniforms.origin.value.y = Math.cos(timer * 2.5) * 0.5 + 0.5;
-                        simulationShader.uniforms.origin.value.z = Math.sin(timer * 2.7) * 0.5 + 0.5;
-                        // swap
-                        var tmp = fboParticles.in;
-                        fboParticles.in = fboParticles.out;
-                        fboParticles.out = tmp;
-                        simulationShader.uniforms.tPositions.value = fboParticles.in;
-                        fboParticles.simulate(fboParticles.out);
-                        material.uniforms.map.value = fboParticles.out;
-                        controls.update();
-                        renderer.render(scene, camera);
-                    }
-        </script>
-        <!-- window scroll -->
-        <script>
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 1) {
-                    $('.masthead').addClass("sticky");
-                } else {
-                    $('.masthead').removeClass("sticky");
-                }
+    <script>
+        var container;
+        var scene, camera, light, renderer;
+        var geometry, cube, mesh, material;
+        var data, texture, points;
+        var controls;
+        var fboParticles, rtTexturePos, rtTexturePos2, simulationShader;
+        var planeMat, planeGeo, plane;
+        var isMobile = $.browser.mobile;
+        if (!isMobile) {
+            init();
+            animate();
+        } else {
+            $('#home').addClass('static-bg');
+        }
+
+        function init() {
+            container = document.createElement('div');
+            document.body.appendChild(container);
+            $('#canvasAnimation').append(container);
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            container.appendChild(renderer.domElement);
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000);
+            scene.add(camera);
+            controls = new THREE.OrbitControls2(camera);
+            controls.radius = 400;
+            controls.speed = 2;
+            //
+            var width = 900,
+                height = 900;
+            if (!renderer.context.getExtension('OES_texture_float')) {
+                console.log('OES_texture_float is not :(');
+            }
+            // Start Creation of DataTexture
+            // Could it be simplified with THREE.FBOUtils.createTextureFromData(textureWidth, textureWidth, data); ?
+            data = new Float32Array(width * height * 3);
+            texture = new THREE.DataTexture(data, width, height, THREE.RGBFormat, THREE.FloatType);
+            texture.minFilter = THREE.NearestFilter;
+            texture.magFilter = THREE.NearestFilter;
+            texture.needsUpdate = true;
+            // zz85 - fbo init
+            rtTexturePos = new THREE.WebGLRenderTarget(width, height, {
+                wrapS: THREE.RepeatWrapping,
+                wrapT: THREE.RepeatWrapping,
+                minFilter: THREE.NearestFilter,
+                magFilter: THREE.NearestFilter,
+                format: THREE.RGBFormat,
+                type: THREE.FloatType,
+                stencilBuffer: false
             });
-            $(".masthead a, a.btn").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top - 50}, 500);
-            });
-            $().ready(function () {
-                $('#home').find('.cover-hello, .cover-heading, .cover-designation, .cover-button').addClass('animated bounceInUp');
-                $('#home').find('.social a').addClass('animated zoomIn');
-                $('#home').find('.cover-wrapper-inner, .cover-button').removeClass('transparent');
-                $container = $('.works_list ul');
-                $container.isotope({
-                    onLayout: function () {
-                        $.waypoints('refresh');
-                    }
-                });
-                var e = $(".isotope");
-                e.imagesLoaded(function () {
-                    e.isotope({
-                        itemSelector: ".element-item",
-                        layoutMode: "fitRows",
-                    });
-                });
-                var t = {};
-                $("#filters").on("click", "button", function () {
-                    var n = $(this).attr("data-filter");
-                    $(this).addClass("active");
-                    $(this).siblings().removeClass("active");
-                    n = t[n] || n;
-                    e.isotope({
-                        filter: n
-                    })
-                })
-                if (isMobile) {
-                    $(".item").click(function () {
-                        toggleDetail(this);
-                    });
-                } else {
-                    $(".item").hover(function () {
-                        toggleDetail(this);
-                    });
-                }
-                widthcalc();
-                $(window).resize(function () {
-                    widthcalc();
-                    $.waypoints('refresh');
-                });
-                $(".cover-designation span").typed({
-                    strings: ["a code Junkie", "an Agile Junkie", "a Passionate Software Engineer"],
-                    typeSpeed: 30,
-                    startDelay: 1000,
-                });
-            });
-            $('#home, #about, #works, #contact').waypoint(function () {
-                activenav($(this));
-            }, {offset: function () {
-                    return -$(this).height() + 52;
-                }});
-            $('#home, #about, #works, #contact').waypoint(function () {
-                activenav($(this));
-            }, {offset: '51px'});
-            $('#works').waypoint(function () {
-                $(this).find('.section-title, #filters').addClass('animated fadeInUp');
-                $(this).find('.item').addClass('animated zoomIn');
-            }, {offset: function () {
-                    return $(window).height() - 2;
-                }});
-            $('#about').waypoint(function () {
-                $(this).find(' .section-title, .desc ').addClass('animated fadeInUp');
-                $(this).find('.btn').addClass('animated zoomIn');
-            }, {offset: function () {
-                    return $(window).height() - 2;
-                }});
-            $('.timeline-row').waypoint(function () {
-                if (!isMobile) {
-                    $(this).filter(':nth-child(even)').find('.timeline-content').addClass('animated fadeInRight').end()
-                            .find('.timeline-time').addClass('animated fadeInLeft').end()
-                            .find('.timeline-icon').addClass('animated zoomIn');
-                    $(this).filter(':nth-child(odd)').find('.timeline-content').addClass('animated fadeInLeft').end()
-                            .find('.timeline-time').addClass('animated fadeInRight').end()
-                            .find('.timeline-icon').addClass('animated zoomIn');
-                } else {
-                    $(this).find('.timeline-content').addClass('animated fadeInRight').end()
-                            .find('.timeline-time').addClass('animated fadeInLeft').end()
-                            .find('.timeline-icon').addClass('animated zoomIn');
-                }
-            }, {offset: function () {
-                    return $(window).height() + 100;
-                }});
-            $('#contact').waypoint(function () {
-                $(this).find(' .section-title, .desc ').addClass('animated fadeInUp');
-                $(this).find('.social a').addClass('animated zoomIn');
-            }, {offset: function () {
-                    return $(window).height() - 2;
-                }});
-            function toggleDetail(ele) {
-                $(ele).children(".work_details").toggleClass("auto_height");
-                $(ele).siblings('.item').children(".work_details").removeClass("auto_height");
-                $container.isotope('reLayout');
-            }
-            ;
-            function activenav(ele) {
-                var eleid = ele.attr('id');
-                $('.masthead li').removeClass('active');
-                $('.masthead').find('a[href=#' + eleid + ']').parent().addClass('active');
-            }
-            function widthcalc() {
-                var wrapwidth = $container.width()
-                if (wrapwidth / 4 >= 250) {
-                    worksisotope(wrapwidth / 4);
-                } else if (wrapwidth / 3 >= 250) {
-                    worksisotope(wrapwidth / 3);
-                } else if (wrapwidth / 2 >= 250) {
-                    worksisotope(wrapwidth / 2);
-                } else {
-                    worksisotope(wrapwidth);
-                }
-            }
-            function worksisotope(iwidth) {
-                //console.log(iwidth);
-                $('.item').width(Math.floor(iwidth));
-                $container.imagesLoaded(function () {
-                    $container.isotope({
-                        itemSelector: '.item',
-                        resizable: false,
-                        masonry: {columnWidth: Math.floor(iwidth)},
-                    });
-                });
-            }
-            $(".fancybox").fancybox({
-                padding: 0,
-                helpers: {
-                    overlay: {
-                        css: {
-                            'background': 'rgba(0, 0, 0, 0.90)'
-                        }
+            rtTexturePos2 = rtTexturePos.clone();
+            simulationShader = new THREE.ShaderMaterial({
+                uniforms: {
+                    tPositions: {
+                        type: "t",
+                        value: texture
                     },
-                    beforeLoad: {
+                    origin: {
+                        type: "v3",
+                        value: new THREE.Vector3()
+                    },
+                    timer: {
+                        type: "f",
+                        value: 0
                     }
+                },
+                vertexShader: document.getElementById('texture_vertex_simulation_shader').textContent,
+                fragmentShader: document.getElementById('texture_fragment_simulation_shader').textContent
+            });
+            fboParticles = new THREE.FBOUtils(width, renderer, simulationShader);
+            fboParticles.renderToTexture(rtTexturePos, rtTexturePos2);
+            fboParticles.in = rtTexturePos;
+            fboParticles.out = rtTexturePos2;
+            geometry = new THREE.Geometry();
+            for (var i = 0, l = width * height; i < l; i++) {
+                var vertex = new THREE.Vector3();
+                vertex.x = (i % width) / width;
+                vertex.y = Math.floor(i / width) / height;
+                geometry.vertices.push(vertex);
+            }
+            material = new THREE.ShaderMaterial({
+                uniforms: {
+                    "map": {
+                        type: "t",
+                        value: rtTexturePos
+                    },
+                    "width": {
+                        type: "f",
+                        value: width
+                    },
+                    "height": {
+                        type: "f",
+                        value: height
+                    },
+                    "pointColor": {
+                        type: "v4",
+                        value: new THREE.Vector4(0, 0.24, 0.2, 0.07)
+                    },
+                    "pointSize": {
+                        type: "f",
+                        value: 1
+                    }
+                },
+                vertexShader: document.getElementById('vs-particles').textContent,
+                fragmentShader: document.getElementById('fs-particles').textContent,
+                blending: THREE.AdditiveBlending,
+                depthWrite: false,
+                depthTest: false,
+                transparent: true
+            });
+            mesh = new THREE.ParticleSystem(geometry, material);
+            scene.add(mesh);
+            scene.add(new THREE.Mesh(new THREE.CubeGeometry(500, 500, 500), new THREE.MeshBasicMaterial({
+                color: 0xffffff,
+                wireframe: true,
+                opacity: 0,
+                transparent: true
+            })));
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            render();
+        }
+        var timer = 0;
+
+        function render() {
+            timer += 0.005;
+            simulationShader.uniforms.timer.value = timer;
+            simulationShader.uniforms.origin.value.x = Math.sin(timer * 2.3) * 0.5 + 0.5;
+            simulationShader.uniforms.origin.value.y = Math.cos(timer * 2.5) * 0.5 + 0.5;
+            simulationShader.uniforms.origin.value.z = Math.sin(timer * 2.7) * 0.5 + 0.5;
+            // swap
+            var tmp = fboParticles.in;
+            fboParticles.in = fboParticles.out;
+            fboParticles.out = tmp;
+            simulationShader.uniforms.tPositions.value = fboParticles.in;
+            fboParticles.simulate(fboParticles.out);
+            material.uniforms.map.value = fboParticles.out;
+            controls.update();
+            renderer.render(scene, camera);
+        }
+    </script>
+    <!-- window scroll -->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1) {
+                $('.masthead').addClass("sticky");
+            } else {
+                $('.masthead').removeClass("sticky");
+            }
+        });
+        $(".masthead a, a.btn").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top - 50
+            }, 500);
+        });
+        $().ready(function() {
+            $('#home').find('.cover-hello, .cover-heading, .cover-designation, .cover-button').addClass('animated bounceInUp');
+            $('#home').find('.social a').addClass('animated zoomIn');
+            $('#home').find('.cover-wrapper-inner, .cover-button').removeClass('transparent');
+            $container = $('.works_list ul');
+            $container.isotope({
+                onLayout: function() {
+                    $.waypoints('refresh');
                 }
             });
-            cover - designation
-        </script>
+            var e = $(".isotope");
+            e.imagesLoaded(function() {
+                e.isotope({
+                    itemSelector: ".element-item",
+                    layoutMode: "fitRows",
+                });
+            });
+            var t = {};
+            $("#filters").on("click", "button", function() {
+                var n = $(this).attr("data-filter");
+                $(this).addClass("active");
+                $(this).siblings().removeClass("active");
+                n = t[n] || n;
+                e.isotope({
+                    filter: n
+                })
+            })
+            if (isMobile) {
+                $(".item").click(function() {
+                    toggleDetail(this);
+                });
+            } else {
+                $(".item").hover(function() {
+                    toggleDetail(this);
+                });
+            }
+            widthcalc();
+            $(window).resize(function() {
+                widthcalc();
+                $.waypoints('refresh');
+            });
+            $(".cover-designation span").typed({
+                strings: ["a code Junkie", "an Agile Junkie", "a Passionate Software Engineer"],
+                typeSpeed: 30,
+                startDelay: 1000,
+            });
+        });
+        $('#home, #about, #works, #contact').waypoint(function() {
+            activenav($(this));
+        }, {
+            offset: function() {
+                return -$(this).height() + 52;
+            }
+        });
+        $('#home, #about, #works, #contact').waypoint(function() {
+            activenav($(this));
+        }, {
+            offset: '51px'
+        });
+        $('#works').waypoint(function() {
+            $(this).find('.section-title, #filters').addClass('animated fadeInUp');
+            $(this).find('.item').addClass('animated zoomIn');
+        }, {
+            offset: function() {
+                return $(window).height() - 2;
+            }
+        });
+        $('#about').waypoint(function() {
+            $(this).find(' .section-title, .desc ').addClass('animated fadeInUp');
+            $(this).find('.btn').addClass('animated zoomIn');
+        }, {
+            offset: function() {
+                return $(window).height() - 2;
+            }
+        });
+        $('.timeline-row').waypoint(function() {
+            if (!isMobile) {
+                $(this).filter(':nth-child(even)').find('.timeline-content').addClass('animated fadeInRight').end()
+                    .find('.timeline-time').addClass('animated fadeInLeft').end()
+                    .find('.timeline-icon').addClass('animated zoomIn');
+                $(this).filter(':nth-child(odd)').find('.timeline-content').addClass('animated fadeInLeft').end()
+                    .find('.timeline-time').addClass('animated fadeInRight').end()
+                    .find('.timeline-icon').addClass('animated zoomIn');
+            } else {
+                $(this).find('.timeline-content').addClass('animated fadeInRight').end()
+                    .find('.timeline-time').addClass('animated fadeInLeft').end()
+                    .find('.timeline-icon').addClass('animated zoomIn');
+            }
+        }, {
+            offset: function() {
+                return $(window).height() + 100;
+            }
+        });
+        $('#contact').waypoint(function() {
+            $(this).find(' .section-title, .desc ').addClass('animated fadeInUp');
+            $(this).find('.social a').addClass('animated zoomIn');
+        }, {
+            offset: function() {
+                return $(window).height() - 2;
+            }
+        });
 
-    </body>
+        function toggleDetail(ele) {
+            $(ele).children(".work_details").toggleClass("auto_height");
+            $(ele).siblings('.item').children(".work_details").removeClass("auto_height");
+            $container.isotope('reLayout');
+        };
+
+        function activenav(ele) {
+            var eleid = ele.attr('id');
+            $('.masthead li').removeClass('active');
+            $('.masthead').find('a[href=#' + eleid + ']').parent().addClass('active');
+        }
+
+        function widthcalc() {
+            var wrapwidth = $container.width()
+            if (wrapwidth / 4 >= 250) {
+                worksisotope(wrapwidth / 4);
+            } else if (wrapwidth / 3 >= 250) {
+                worksisotope(wrapwidth / 3);
+            } else if (wrapwidth / 2 >= 250) {
+                worksisotope(wrapwidth / 2);
+            } else {
+                worksisotope(wrapwidth);
+            }
+        }
+
+        function worksisotope(iwidth) {
+            //console.log(iwidth);
+            $('.item').width(Math.floor(iwidth));
+            $container.imagesLoaded(function() {
+                $container.isotope({
+                    itemSelector: '.item',
+                    resizable: false,
+                    masonry: {
+                        columnWidth: Math.floor(iwidth)
+                    },
+                });
+            });
+        }
+        $(".fancybox").fancybox({
+            padding: 0,
+            helpers: {
+                overlay: {
+                    css: {
+                        'background': 'rgba(0, 0, 0, 0.90)'
+                    }
+                },
+                beforeLoad: {}
+            }
+        });
+        cover - designation
+    </script>
+
+</body>
+
 </html>
